@@ -1,85 +1,122 @@
-# R-Bot Industrial · v1.0
+# Sonar · v1.0
 
-HMI de operación para el laboratorio Occupancy (**Circuito**) + chat en lenguaje natural + teleop.
+**Consola remota de operación** para robots de robótica autónoma y monitoreo  
+(Occupancy + chat en lenguaje natural + teleop).
 
-**Checkpoint / release:** `LabHmiStableV4` — primera versión pública  
-(tema Sonar, Operator v3, Circuito Occupancy).
+Empezó orientado a **R-Bot**; hoy opera también **Nexus** (y el mismo diseño sirve para más perfiles).  
+El enfoque **industrial** es el rubro donde encaja primero: planta, zonas y vigilancia remota.
 
-Autor: [Rony Luis Palacios](https://github.com/Rony-Luis-Theodore) · Universidad Nacional de Piura · IEEE Student Branch  
+**Release oficial:** v1.0 · checkpoint `LabHmiStableV4`  
+Autor: [Rony Luis Palacios](https://github.com/Rony-Luis-Theodore) · UNP · IEEE Student Branch  
 Powered by: UNP IEEE / IEEE RAS · **Kalman Robotics**
 
 ---
 
-## Alcance de esta versión (léelo antes de operar)
+## Qué es Sonar (visión)
+
+Sonar permite que **un operario, desde cualquier lugar**, controle robots pensados para
+autonomía y monitoreo sobre un **mapa Occupancy** de la zona que le interesa.
+
+- En el laboratorio universitario, el “sitio” es el **lab remoto de Kalman** y el mapa es el del circuito.
+- Si se lleva a una empresa, el laboratorio remoto se convierte en **las instalaciones**,
+  el mapa pasa a ser el **de la planta (o de un área)**, y el operario puede trabajar
+  desde la oficina u otro sitio del mundo.
+- Por eso la HMI admite **elegir mapas**: cada uno corresponde a la zona que se quiere monitorear
+  o recorrer (planta completa, área particular, etc.).
+- Sobre ese mapa se dan tareas: desplazamientos, giros, secuencias y, más adelante,
+  destinos / puntos de vista / rutas fijas.
+
+En resumen: **misma ciencia** (pose LiDAR, odometría, chat → movimiento), distinto “lugar”
+según el mapa y el robot conectado.
+
+---
+
+## Alcance de la v1.0 (oficial)
 
 ### Laboratorio remoto (Kalman)
 
-Para mover el robot **de verdad** hace falta una sesión del **laboratorio remoto de Kalman Robotics**:
+Para mover el robot **de verdad**:
 
-1. Entra al lab con el **enlace / credenciales que te brindan** para la sesión.
-2. Conéctate al robot que te asignen (Create3 / Nexus u otro según el slot).
-3. En tu máquina: entorno ROS 2 acorde al lab + `ROS_PROVIDER=rclpy` en `.env`  
-   (detalle: [`docs/lab-ros.md`](docs/lab-ros.md)).
-4. Arranca la HMI → elige perfil **Nexus** (recomendado en v1) → **Ubicar**.
+1. Entra al lab con el **enlace / acceso** que te brindan para la sesión.
+2. Conéctate al robot asignado (p. ej. Nexus).
+3. En **Linux**, ten **ROS 2** listo (ver abajo) y `ROS_PROVIDER=rclpy` en `.env`.
+4. Arranca Sonar → perfil **Nexus** → **Ubicar**.
 
-Sin esa conexión remota, la app sigue siendo útil en **modo mock** (interfaz + chat simulado, sin robot).
+Sin sesión remota, el modo **mock** sirve para ensayar la interfaz y el chat (sin robot).
 
-### Nexus vs R-Bot en v1
+### Linux + ROS 2 (obligatorio para el lab)
 
-| | **Nexus** (v1 lista) | **R-Bot** (pendiente de mapa) |
-|--|----------------------|------------------------------|
-| Mapa Occupancy / RViz / Gazebo | Sí: trabajamos con el mapa del lab al alcance | Aún **no** teníamos el mapa equivalente para calzar LiDAR igual |
-| Ubicar + circuito + chat métrico | **Soportado y validado** | Selector existe; **no está validado** al mismo nivel |
-| Misma ciencia (pose LiDAR, odom, chat → motion) | Ya en el código | Se podrá **reutilizar** cuando el compañero aporte / integre el mapa de R-Bot |
+El navegador solo es la consola. La **conexión al robot del laboratorio** pasa por ROS 2
+en una máquina **Linux** (recomendado: **Ubuntu 22.04 + ROS 2 Humble**).
 
-**Conclusión v1:** esta release **opera correctamente con Nexus** en el lab Kalman.  
-R-Bot queda listo a nivel de arquitectura HMI/API; falta el mapa y el calce fino (tarea del compañero). Cuando suban ese mapa, se aplica la **misma** tubería (Ubicar, escala odom, Operator, teleop).
+Resumen (detalle completo: [`docs/lab-ros.md`](docs/lab-ros.md)):
 
-### Qué sí puedes hacer (v1 · Nexus + lab)
+1. Instala / usa el entorno ROS 2 Humble del lab (o la imagen que indique Kalman).
+2. Compila o enlaza el workspace ROS (`install/setup.bash`).
+3. Configura `ROS_DOMAIN_ID` (y red/DDS) **como te indiquen en la sesión**.
+4. En `apps/api/.env`:
 
-- Ver el plano Occupancy del circuito y el tip LiDAR.
-- **Ubicar** la pose una vez (mejor desde el **centro del circuito**).
-- Órdenes de chat: avanzar / retroceder / girar (con metros, cm, pies, pulgadas y grados).
-- Secuencias multi-paso con conectores (*primero… luego… por último…*).
-- Parar (`detén` / `para`).
-- Teleop básico (panel Conducir) y emergencia.
-- Modo mock sin robot para ensayar la UI.
+```env
+ROS_PROVIDER=rclpy
+ROBOT_PROFILE=nexus
+ROS_DOMAIN_ID=20
+```
 
-### Qué aún no (v1)
+5. En una terminal con el entorno ROS cargado (`source …/setup.bash`):
 
-- Rutas / waypoints **predeterminados** → planeado para **v2**.
-- Navegación a **zonas nombradas** (almacén, válvula, pasillo…) sin mapa semántico.
-- Cámara en vivo en el rail (placeholder).
-- Operación R-Bot al mismo nivel que Nexus (falta mapa Occupancy propio).
-- El modelo GGUF `rbot-operator` (~1.8 GB) **no va en git**; Ollama es opcional (en mock el parser local basta).
+```bash
+bash scripts/start-stack.sh
+```
 
-### Próxima versión (v2 · orientación)
+6. Abre http://127.0.0.1:8000 → perfil **Nexus** → centro del circuito → **Ubicar**.
 
-- **Rutas predeterminadas** (planes fijos / demos de recorrido).
-- Integración R-Bot cuando exista el mapa del compañero.
-- Mejoras de UX sobre el mismo Circuito.
+> **Windows / macOS:** puedes ver la HMI en **mock**. Para el robot real del lab Kalman
+> hace falta el puente ROS en **Linux**.
+
+### Robots en v1
+
+| | **Nexus** | **R-Bot** |
+|--|-----------|-----------|
+| Estado v1 | **Validado** (mapa Occupancy / RViz / Gazebo al alcance) | Selector listo; **se espera el mapa de R-Bot para poder continuar** al mismo nivel |
+| Ubicar + chat métrico | Sí | Misma tubería cuando exista el mapa |
+
+### Qué sí puedes hacer
+
+- Plano Occupancy + tip LiDAR.
+- **Ubicar** una vez (mejor desde el **centro del circuito**).
+- Chat: avanzar / retroceder / girar (m, cm, pies, pulgadas, grados) y secuencias.
+- Parar, teleop básico y emergencia.
+- Demo mock sin robot.
+
+### Qué aún no
+
+- Rutas / waypoints **predeterminados** → **v2**.
+- Zonas nombradas (“ve al almacén”) sin mapa semántico.
+- Cámara en vivo (placeholder).
+- R-Bot al mismo nivel que Nexus hasta tener su mapa.
+- GGUF `rbot-operator` fuera de git (Ollama opcional).
+
+### Hacia v2
+
+- Rutas predeterminadas.
+- Mapa de R-Bot + más zonas / destinos sobre el selector de mapas.
 
 ---
 
 ## Cómo usar la interfaz
 
-1. **Perfil robot** (arriba): en lab real elige **Nexus**. `Auto` detecta si puede; `Simulación` / mock para demo.
-2. **Centro del circuito:** mueve el robot al centro **antes** de Ubicar — el LiDAR lee mejor y el calce suele salir a la primera.
-3. **Ubicar en el mapa** (una vez): ancla la pose; el botón se oculta.  
-   Si el tip no cuadra → **recarga la página**, vuelve al centro y Ubica otra vez.  
-   *No hay botón «Reiniciar»*: el ancla se limpia con refresh del navegador.
-4. **LiDAR** (dock): muestra/oculta el tip. **Limpiar trazo** borra el rastro dibujado.
-5. **Chat:** texto o **Voz** → Enviar. Órdenes en español (ver ejemplos abajo).
-6. **Rail izquierdo:** Mapa · Conducir (joystick/panel) · Cámara (próximamente).
-7. **Chips de estado:** conexión, batería, modo, pose aproximada.
+1. **Perfil robot:** en lab real → **Nexus**.
+2. **Centro del circuito** antes de Ubicar (mejor LiDAR).
+3. **Ubicar en el mapa** una vez; si no cuadra → **recarga la página** y Ubica otra vez.
+4. **LiDAR** / **Limpiar trazo** en el dock.
+5. **Chat** (texto o voz) — ejemplos abajo.
+6. Rail: Mapa · Conducir · Cámara (próximamente).
 
-Ventana recomendada ≥ **1100×640**; por debajo puede haber scroll.
+Ventana recomendada ≥ **1100×640**.
 
 ---
 
 ## Qué decirle al chat (ejemplos)
-
-Funciona mejor con frases claras. Unidades y conectores están soportados.
 
 **Un paso**
 ```text
@@ -99,11 +136,9 @@ avanza 2 pies luego gira 90 a la izquierda finalmente avanza 12 pulgadas
 primero avanza 40 cm, luego gira 90 a la izquierda, a continuación avanza 1 metro
 ```
 
-**Útil saber**
-- Si dices «gira 45 a la derecha» **sin** la palabra *grados*, igual se interpreta como grados.
-- cm → m automáticamente; también pulgadas y pies.
-- «para atrás» = retroceder (no es cancelar). «detén» / «para» solo = parada.
-- Aún **no**: «ve al almacén», «ruta A», waypoints nombrados (eso va hacia v2 / mapa semántico).
+- «gira 45 a la derecha» vale aunque no diga *grados*.
+- «para atrás» = retroceder; «detén» / «para» = parada.
+- Aún no: destinos por nombre de zona / “ruta A”.
 
 ---
 
@@ -111,51 +146,46 @@ primero avanza 40 cm, luego gira 90 a la izquierda, a continuación avanza 1 met
 
 ```bash
 cd rbot-industrial/apps/api
-cp .env.example .env          # LLM_PROVIDER=mock, ROS_PROVIDER=mock
+cp .env.example .env
 python3 -m venv .venv
-source .venv/bin/activate     # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -r requirements.txt
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 
 O: `bash scripts/start-stack.sh` · Windows: `.\scripts\start-hmi.ps1`  
-Abre **http://127.0.0.1:8000**
+→ **http://127.0.0.1:8000**
 
-### Lab real (Nexus + Kalman)
-
-1. Sesión remota Kalman (enlace del lab).
-2. ROS 2 + dominio DDS según te indiquen.
-3. `.env` con `ROS_PROVIDER=rclpy` (ver [`docs/lab-ros.md`](docs/lab-ros.md)).
-4. Perfil **Nexus** en la HMI → centro → Ubicar → chat.
+Lab real: sección **Linux + ROS 2** arriba + [`docs/lab-ros.md`](docs/lab-ros.md).
 
 ---
 
-## Qué incluye el repo (runtime v1)
+## Repo (runtime v1.0)
 
 | Pieza | Ruta |
 |-------|------|
 | API FastAPI | `apps/api/` |
-| HMI Occupancy (Sonar) | `apps/web/` |
-| Mapa demo Occupancy | `packages/lab_map/maps/` |
-| Trazos / perímetro circuito | `apps/api/app/services/lab_obstacle_traces/` |
+| HMI Occupancy | `apps/web/` |
+| Mapas Occupancy | `packages/lab_map/maps/` |
+| Trazos / perímetro | `apps/api/app/services/lab_obstacle_traces/` |
 | Chat mock / Ollama | `apps/api/app/adapters/llm/` |
-| Dataset + Colab Operator v3 | `ml/` |
-| Checkpoint lab | `packages/lab_map/snapshots/LabHmiStableV4/` |
+| Dataset + Colab | `ml/` |
+| Checkpoint | `packages/lab_map/snapshots/LabHmiStableV4/` |
 
-**No va en git (pesado / local):** GGUF Ollama, workspace ROS (`packages/ros_ws`), `.env` real, tokens del lab.  
-Con el repo + Python basta para **mock**. Para robot: sesión Kalman + ROS en tu máquina (no sustituible por el zip del repo).
+Fuera de git: GGUF, workspace ROS, `.env` real, tokens del lab.  
+Carpeta técnica del monorepo: `rbot-industrial` · producto: **Sonar**.
 
 ---
 
-## Opcional
+## Docs
 
-- Ollama + `rbot-operator`: [`ml/COLAB_NOW.md`](ml/COLAB_NOW.md)
-- Robot / Kalman / ROS 2: [`docs/lab-ros.md`](docs/lab-ros.md)
+- Lab Linux / ROS / Kalman: [`docs/lab-ros.md`](docs/lab-ros.md)
 - Getting started: [`docs/getting-started.md`](docs/getting-started.md)
+- Ollama / Operator: [`ml/COLAB_NOW.md`](ml/COLAB_NOW.md)
 
 ---
 
-## Licencia / equipo
+## Licencia
 
-Proyecto universitario — equipo R-Bot.  
-Stack: FastAPI · HMI web · Ollama (opcional) · ROS 2 Humble (opcional, lab Kalman).
+Proyecto universitario — línea R-Bot / Sonar.  
+Stack: FastAPI · HMI web · Ollama (opcional) · ROS 2 Humble (lab, Linux).

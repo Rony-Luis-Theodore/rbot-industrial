@@ -43,7 +43,7 @@ class Settings(BaseSettings):
     )
 
     # --- Metadatos de la aplicación ---
-    APP_NAME: str = "R-Bot Intelligent Control"
+    APP_NAME: str = "Sonar"
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = True
 
