@@ -5,7 +5,10 @@
 - Python **3.10+**
 - Navegador moderno
 - (Opcional) [Ollama](https://ollama.com) para LLM local
-- (Opcional, solo Linux lab) ROS 2 Humble + robot/Kalman — ver [lab-ros.md](lab-ros.md)
+- (Lab real) Sesión remota **Kalman Robotics** (enlace que te brindan) + ROS 2 — ver [lab-ros.md](lab-ros.md)
+
+**v1:** operación robot validada con **Nexus**. R-Bot usará la misma ciencia cuando
+exista su mapa Occupancy (trabajo del compañero). Detalle en el [README](../README.md).
 
 ## Demo mock (recomendado)
 
@@ -21,8 +24,17 @@ python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
 - UI: http://127.0.0.1:8000  
 - API docs: http://127.0.0.1:8000/docs  
 
-Con `LLM_PROVIDER=mock` el chat entiende órdenes tipo *avanza 30 cm*, *gira 90 izquierda*,
+Con `LLM_PROVIDER=mock` el chat entiende órdenes tipo *avanza 30 cm*, *gira 90 a la izquierda*,
 secuencias y parada, sobre un robot simulado en memoria.
+
+Ejemplos útiles:
+
+```text
+avanza 50 cm
+gira 90 a la derecha
+avanza 0.8 metros, gira 90 grados a la derecha, avanza 0.5 metros
+detén
+```
 
 El mapa Occupancy `laboratorio_kalman` viene en `packages/lab_map/maps/`.
 
@@ -61,5 +73,12 @@ OLLAMA_MODEL=rbot-operator
 
 ## Ubicar en el mapa
 
-En modo mock la pose es simulada. En lab real: mira un muro y pulsa **Ubicar en el mapa**
-(checkpoint `LabHmiStableV1`). Detalle ROS: [lab-ros.md](lab-ros.md).
+En modo mock la pose es simulada.
+
+En lab real (Nexus + Kalman):
+
+1. Lleva el robot al **centro del circuito** (mejor lectura LiDAR).
+2. Pulsa **Ubicar en el mapa** una vez.
+3. Si el tip no cuadra: **recarga la página**, vuelve al centro y Ubica otra vez.
+
+Detalle ROS: [lab-ros.md](lab-ros.md). Checkpoint: `LabHmiStableV4`.
