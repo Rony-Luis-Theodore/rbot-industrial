@@ -1,0 +1,135 @@
+{"text": "muéstrame los topics", "intent": "list_topics", "destination": null}
+{"text": "lista los topics", "intent": "list_topics", "destination": null}
+{"text": "qué topics hay", "intent": "list_topics", "destination": null}
+{"text": "dame los topics ros", "intent": "list_topics", "destination": null}
+{"text": "topics activos", "intent": "list_topics", "destination": null}
+{"text": "enséñame los topics del robot", "intent": "list_topics", "destination": null}
+{"text": "show topics", "intent": "list_topics", "destination": null}
+{"text": "list ros topics", "intent": "list_topics", "destination": null}
+{"text": "quiero ver los topics", "intent": "list_topics", "destination": null}
+{"text": "cuáles son los topics", "intent": "list_topics", "destination": null}
+{"text": "muéstrame los nodos", "intent": "list_nodes", "destination": null}
+{"text": "qué nodos hay activos", "intent": "list_nodes", "destination": null}
+{"text": "lista nodos", "intent": "list_nodes", "destination": null}
+{"text": "nodos ros2", "intent": "list_nodes", "destination": null}
+{"text": "show nodes", "intent": "list_nodes", "destination": null}
+{"text": "list nodes", "intent": "list_nodes", "destination": null}
+{"text": "dame los nodos del sistema", "intent": "list_nodes", "destination": null}
+{"text": "nodos activos ahora", "intent": "list_nodes", "destination": null}
+{"text": "lista servicios", "intent": "list_services", "destination": null}
+{"text": "muéstrame los services", "intent": "list_services", "destination": null}
+{"text": "qué servicios hay", "intent": "list_services", "destination": null}
+{"text": "list services", "intent": "list_services", "destination": null}
+{"text": "lista actions", "intent": "list_actions", "destination": null}
+{"text": "muéstrame las actions", "intent": "list_actions", "destination": null}
+{"text": "qué acciones ros hay", "intent": "list_actions", "destination": null}
+{"text": "list actions", "intent": "list_actions", "destination": null}
+{"text": "avanza", "intent": "navigate", "destination": "adelante"}
+{"text": "adelante", "intent": "navigate", "destination": "adelante"}
+{"text": "avanza un poco", "intent": "navigate", "destination": "adelante"}
+{"text": "avanza en línea recta", "intent": "navigate", "destination": "adelante"}
+{"text": "muévete hacia adelante", "intent": "navigate", "destination": "adelante"}
+{"text": "go forward", "intent": "navigate", "destination": "adelante"}
+{"text": "drive forward", "intent": "navigate", "destination": "adelante"}
+{"text": "camina hacia adelante", "intent": "navigate", "destination": "adelante"}
+{"text": "sigue recto", "intent": "navigate", "destination": "adelante"}
+{"text": "avanza despacio", "intent": "navigate", "destination": "adelante"}
+{"text": "ve a la estación a", "intent": "navigate", "destination": "estación A"}
+{"text": "ve a la estación b", "intent": "navigate", "destination": "estación B"}
+{"text": "ve a revisar la fuga de la bomba 3", "intent": "navigate", "destination": "fuga bomba 3"}
+{"text": "inspecciona la bomba 3", "intent": "navigate", "destination": "bomba 3"}
+{"text": "dirígete al tanque 2", "intent": "navigate", "destination": "tanque 2"}
+{"text": "ve a la zona de peligros", "intent": "navigate", "destination": "zona peligros"}
+{"text": "revisa la fuga", "intent": "navigate", "destination": "fuga"}
+{"text": "ve a la entrada", "intent": "navigate", "destination": "entrada"}
+{"text": "navega a home", "intent": "navigate", "destination": "home"}
+{"text": "undock", "intent": "navigate", "destination": "undock"}
+{"text": "desatraca", "intent": "navigate", "destination": "undock"}
+{"text": "detén", "intent": "cancel_navigation", "destination": null}
+{"text": "detén el robot", "intent": "cancel_navigation", "destination": null}
+{"text": "para", "intent": "cancel_navigation", "destination": null}
+{"text": "parar", "intent": "cancel_navigation", "destination": null}
+{"text": "frena", "intent": "cancel_navigation", "destination": null}
+{"text": "stop", "intent": "cancel_navigation", "destination": null}
+{"text": "halt", "intent": "cancel_navigation", "destination": null}
+{"text": "cancela la navegación", "intent": "cancel_navigation", "destination": null}
+{"text": "deja de moverte", "intent": "cancel_navigation", "destination": null}
+{"text": "quieto", "intent": "cancel_navigation", "destination": null}
+{"text": "stop robot", "intent": "cancel_navigation", "destination": null}
+{"text": "regresa a la base", "intent": "return_home", "destination": null}
+{"text": "vuelve a casa", "intent": "return_home", "destination": null}
+{"text": "ve a home", "intent": "return_home", "destination": null}
+{"text": "dock", "intent": "return_home", "destination": null}
+{"text": "atraca", "intent": "return_home", "destination": null}
+{"text": "regresa al dock", "intent": "return_home", "destination": null}
+{"text": "return home", "intent": "return_home", "destination": null}
+{"text": "vuelve a la base", "intent": "return_home", "destination": null}
+{"text": "carga la batería en base", "intent": "return_home", "destination": null}
+{"text": "hola cómo estás", "intent": "unknown", "destination": null}
+{"text": "qué hora es", "intent": "unknown", "destination": null}
+{"text": "cuéntame un chiste", "intent": "unknown", "destination": null}
+{"text": "receta de pasta", "intent": "unknown", "destination": null}
+{"text": "who are you", "intent": "unknown", "destination": null}
+{"text": "necesito que el robot avance un metro", "intent": "navigate", "destination": "adelante"}
+{"text": "por favor detén la marcha", "intent": "cancel_navigation", "destination": null}
+{"text": "quiero ver qué nodos están corriendo", "intent": "list_nodes", "destination": null}
+{"text": "enséñame el listado de topics", "intent": "list_topics", "destination": null}
+{"text": "el operario pide retorno a base", "intent": "return_home", "destination": null}
+{"text": "ve a chequear la fuga de gas", "intent": "navigate", "destination": "fuga de gas"}
+{"text": "enséñame qué topics están publicados", "intent": "list_topics", "destination": null}
+{"text": "puedes listar los topics del create3", "intent": "list_topics", "destination": null}
+{"text": "necesito el listado de topics ros2", "intent": "list_topics", "destination": null}
+{"text": "dime los nodos que están vivos", "intent": "list_nodes", "destination": null}
+{"text": "qué nodos ros hay corriendo", "intent": "list_nodes", "destination": null}
+{"text": "muéstrame services disponibles", "intent": "list_services", "destination": null}
+{"text": "qué actions tiene el robot", "intent": "list_actions", "destination": null}
+{"text": "acércate a la bomba 3", "intent": "navigate", "destination": "bomba 3"}
+{"text": "ve a inspeccionar el tanque 1", "intent": "navigate", "destination": "tanque 1"}
+{"text": "dirígete a la estación de carga", "intent": "navigate", "destination": "estación de carga"}
+{"text": "ve a la zona de válvulas", "intent": "navigate", "destination": "zona de válvulas"}
+{"text": "revisa la fuga de gas en el área B", "intent": "navigate", "destination": "fuga de gas área B"}
+{"text": "navega hasta el laboratorio", "intent": "navigate", "destination": "laboratorio"}
+{"text": "ve al pasillo principal", "intent": "navigate", "destination": "pasillo principal"}
+{"text": "muévete hacia la salida de emergencia", "intent": "navigate", "destination": "salida de emergencia"}
+{"text": "ve a chequear el sensor de presión", "intent": "navigate", "destination": "sensor de presión"}
+{"text": "avanza medio metro", "intent": "navigate", "destination": "adelante"}
+{"text": "sigue hacia adelante", "intent": "navigate", "destination": "adelante"}
+{"text": "forward please", "intent": "navigate", "destination": "adelante"}
+{"text": "go to station a", "intent": "navigate", "destination": "estación A"}
+{"text": "inspect pump 3 leak", "intent": "navigate", "destination": "fuga bomba 3"}
+{"text": "para ya", "intent": "cancel_navigation", "destination": null}
+{"text": "frena el create3", "intent": "cancel_navigation", "destination": null}
+{"text": "cancelar misión", "intent": "cancel_navigation", "destination": null}
+{"text": "emergency stop de navegación", "intent": "cancel_navigation", "destination": null}
+{"text": "vuelve al dock", "intent": "return_home", "destination": null}
+{"text": "atraca en la base", "intent": "return_home", "destination": null}
+{"text": "regresa a la estación de carga", "intent": "return_home", "destination": null}
+{"text": "go home", "intent": "return_home", "destination": null}
+{"text": "cuál es la capital de francia", "intent": "unknown", "destination": null}
+{"text": "pon música", "intent": "unknown", "destination": null}
+{"text": "abre youtube", "intent": "unknown", "destination": null}
+{"text": "traduce esto al inglés", "intent": "unknown", "destination": null}
+{"text": "gira a la derecha", "intent": "navigate", "destination": "derecha"}
+{"text": "gira a la izquierda", "intent": "navigate", "destination": "izquierda"}
+{"text": "gira derecha", "intent": "navigate", "destination": "derecha"}
+{"text": "gira izquierda", "intent": "navigate", "destination": "izquierda"}
+{"text": "rótate a la derecha", "intent": "navigate", "destination": "derecha"}
+{"text": "rótate a la izquierda", "intent": "navigate", "destination": "izquierda"}
+{"text": "vuelta a la derecha", "intent": "navigate", "destination": "derecha"}
+{"text": "vuelta a la izquierda", "intent": "navigate", "destination": "izquierda"}
+{"text": "turn right", "intent": "navigate", "destination": "derecha"}
+{"text": "turn left", "intent": "navigate", "destination": "izquierda"}
+{"text": "gira 90 grados a la derecha", "intent": "navigate", "destination": "derecha"}
+{"text": "gira 90 grados a la izquierda", "intent": "navigate", "destination": "izquierda"}
+{"text": "haz un giro a la derecha", "intent": "navigate", "destination": "derecha"}
+{"text": "haz un giro a la izquierda", "intent": "navigate", "destination": "izquierda"}
+{"text": "gírate a la derecha por favor", "intent": "navigate", "destination": "derecha"}
+{"text": "gírate a la izquierda por favor", "intent": "navigate", "destination": "izquierda"}
+{"text": "retrocede", "intent": "navigate", "destination": "atras"}
+{"text": "retroceder", "intent": "navigate", "destination": "atras"}
+{"text": "ve hacia atrás", "intent": "navigate", "destination": "atras"}
+{"text": "para atrás", "intent": "navigate", "destination": "atras"}
+{"text": "marcha atrás", "intent": "navigate", "destination": "atras"}
+{"text": "atrás", "intent": "navigate", "destination": "atras"}
+{"text": "reverse", "intent": "navigate", "destination": "atras"}
+{"text": "go backward", "intent": "navigate", "destination": "atras"}

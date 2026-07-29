@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="description" content="R-Bot — consola Occupancy Circuito · Sonar">
+  <title>R-Bot · Circuito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css?v=lab-v60-mapfit">
+  <link rel="icon" type="image/png" href="assets/brand/logo-rbot-mark.png">
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">
+          <img src="assets/brand/logo-rbot-mark.png" alt="" width="40" height="40">
+        </span>
+        <div>
+          <p class="logo-name">R-Bot</p>
+          <p class="logo-sub">Circuito · Sonar</p>
+        </div>
+      </div>
+
+      <label class="profile-select" for="robot-profile" title="Robot / modo">
+        <span class="sr-only">Perfil</span>
+        <select id="robot-profile" class="quiet-select" aria-label="Perfil robot">
+          <option value="auto">Auto</option>
+          <option value="rbot">R-Bot</option>
+          <option value="nexus">Nexus</option>
+          <option value="sim">Simulación</option>
+        </select>
+      </label>
+
+      <div class="status-cluster" aria-label="Estado">
+        <div class="chip" id="chip-profile"><span class="dot"></span><span id="kpi-profile">—</span></div>
+        <div class="chip" id="chip-link"><span class="dot"></span><span id="kpi-connection">conectando…</span></div>
+        <div class="chip mono" id="chip-batt"><span id="kpi-battery">—</span></div>
+        <div class="chip mono" id="chip-mode"><span id="kpi-mode">—</span></div>
+        <div class="chip mono hide-sm" id="chip-pose"><span id="kpi-pose">—</span></div>
+      </div>
+    </header>
+
+    <div class="app-body">
+      <nav class="rail" aria-label="Navegación">
+        <button type="button" class="rail-btn is-active" title="Mapa" data-rail="map" aria-pressed="true" aria-label="Mapa">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></svg>
+        </button>
+        <button type="button" class="rail-btn is-on" title="Mostrar / ocultar control" data-rail="drive" aria-pressed="true" aria-label="Conducir">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+        </button>
+        <button type="button" class="rail-btn" title="Cámara (próximamente)" data-rail="camera" aria-pressed="false" aria-label="Cámara">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="13" height="10" rx="1.5"/><path d="M16 10.5 21 8v8l-5-2.5z"/></svg>
+        </button>
+        <div class="rail-spacer" aria-hidden="true"></div>
+        <button type="button" class="rail-btn" title="Perfil robot" data-rail="profile" aria-label="Perfil">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 19c1.8-3 4.2-4.5 7-4.5S17.2 16 19 19"/></svg>
+        </button>
+      </nav>
+
+      <div class="workspace">
+        <section class="stage" id="stage-panel">
+          <div class="stage-frame" id="stage-frame">
+            <div class="lab-arena" id="lab-arena">
+              <div class="lab-arena-top">
+                <div class="lab-brand">
+                  <h1>Circuito</h1>
+                  <p>Plano Occupancy · Pose LiDAR</p>
+                </div>
+                <div class="lab-stats" aria-label="Estado de calce">
+                  <div class="lab-stat">
+                    <span>Estado</span>
+                    <strong id="lab-meta-status" data-status="idle">—</strong>
+                  </div>
+                  <div class="lab-stat">
+                    <span>ψ</span>
+                    <strong id="lab-meta-psi" class="mono">—</strong>
+                  </div>
+                  <div class="lab-stat">
+                    <span>Tip</span>
+                    <strong id="lab-meta-tip" class="mono">—</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lab-canvas-wrap">
+                <canvas id="lab-canvas" width="1200" height="900" aria-label="Plano Occupancy del laboratorio"></canvas>
+                <div class="lab-ubicar-gate" id="lab-ubicar-gate" hidden>
+                  <p class="lab-ubicar-gate-title">Ancla el robot</p>
+                  <p class="lab-ubicar-gate-copy">
+                    <strong>Recomendado:</strong> Lleva el robot al <strong>centro del circuito</strong> antes de Ubicar (mejor lectura LiDAR).<br>
+                    1) Pulsa <strong>Ubicar en el mapa</strong> una vez (luego se oculta).<br>
+                    2) Usa el chat para avanzar / girar.<br>
+                    3) Si el LiDAR no cuadra: <strong>Recarga la página</strong> y Ubica de nuevo (desde el centro suele bastar un intento).
+                  </p>
+                </div>
+              </div>
+
+              <div class="lab-dock">
+                <div class="lab-dock-left">
+                  <select id="lab-map-select" class="quiet-select" aria-label="Mapa"></select>
+                  <button type="button" class="lab-ghost is-on" id="btn-lab-lidar" aria-pressed="true">LiDAR</button>
+                  <button type="button" class="lab-ghost" id="btn-lab-clear">Limpiar trazo</button>
+                  <button type="button" class="lab-ghost" id="btn-lab-flip" disabled title="Rumbo fijado">Rumbo fijo</button>
+                  <span class="lab-hint" id="lab-hint">Pulsa «Ubicar en el mapa»</span>
+                </div>
+                <button type="button" class="btn-ubicar" id="btn-ubicar">Ubicar en el mapa</button>
+              </div>
+            </div>
+
+            <div class="camera-empty" id="camera-empty" hidden>
+              <p class="empty-title">Cámara del robot</p>
+              <p class="empty-copy">Sin stream en este modo Lab.</p>
+            </div>
+          </div>
+        </section>
+
+        <aside class="side" id="side-panel">
+          <section class="panel panel-operate" id="panel-operate">
+            <header class="panel-head">
+              <h2>Chat</h2>
+              <p>Voz o texto</p>
+            </header>
+            <div class="chat-messages" id="chat-messages" role="log" aria-live="polite">
+              <div class="message message-system">
+                <div class="message-content">
+                  Lleva el robot al <strong>centro del circuito</strong> → <strong>Ubicar</strong> una vez → chat. Si el LiDAR no cuadra → <strong>Recarga la página</strong> y Ubica otra vez.
+                </div>
+              </div>
+            </div>
+            <form class="composer" id="chat-form">
+              <button type="button" class="ghost-btn btn-voice" id="btn-voice" aria-pressed="false" title="Hablar">Voz</button>
+              <textarea id="chat-input" placeholder="Escribe una orden…" rows="3" maxlength="2000"></textarea>
+              <button type="submit" class="primary-btn" id="btn-send">Enviar</button>
+            </form>
+          </section>
+
+          <section class="panel panel-drive" id="panel-drive">
+            <button type="button" class="btn-drive-toggle" id="btn-teleop-arm" aria-pressed="false" aria-expanded="false">
+              Tomar control
+            </button>
+            <div class="teleop-body" id="teleop-body" hidden>
+              <p class="panel-note" id="teleop-hint">WASD · flechas · pad</p>
+              <div class="teleop-controls">
+                <div class="teleop-pad" id="teleop-pad">
+                  <button type="button" class="tp-btn" data-dir="fwd">▲</button>
+                  <button type="button" class="tp-btn" data-dir="left">◀</button>
+                  <button type="button" class="tp-btn tp-stop" data-dir="stop">■</button>
+                  <button type="button" class="tp-btn" data-dir="right">▶</button>
+                  <button type="button" class="tp-btn" data-dir="back">▼</button>
+                </div>
+                <label class="speed-row">
+                  <span>Velocidad</span>
+                  <input type="range" id="teleop-speed" min="0.05" max="0.22" step="0.01" value="0.12">
+                </label>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </div>
+
+    <footer class="powered-by" aria-label="Powered by">
+      <span class="powered-by-label">Powered by</span>
+      <div class="powered-by-logos">
+        <img class="powered-unp" src="assets/brand/powered-unp-ieee.png" alt="Universidad Nacional de Piura IEEE Student Branch · IEEE Robotics &amp; Automation Society" height="26">
+        <img class="powered-kalman" src="assets/brand/powered-kalman.png" alt="Kalman Robotics" height="22">
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/app.js?v=lab-v60-mapfit"></script>
+</body>
+</html>

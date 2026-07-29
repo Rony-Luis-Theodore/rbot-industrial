@@ -1,0 +1,67 @@
+{"instruction": "voy a almacén", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "almacen"}, "confidence": 0.92, "reply": "Voy a almacén."}
+{"instruction": "ve a almacén", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "almacen"}, "confidence": 0.92, "reply": "Voy a almacén."}
+{"instruction": "dirígete a almacén", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "almacen"}, "confidence": 0.92, "reply": "Voy a almacén."}
+{"instruction": "navega hasta almacén", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "almacen"}, "confidence": 0.92, "reply": "Voy a almacén."}
+{"instruction": "go to warehouse", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "almacen"}, "confidence": 0.92, "reply": "Voy a almacén."}
+{"instruction": "lleva el robot a almacén", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "almacen"}, "confidence": 0.92, "reply": "Voy a almacén."}
+{"instruction": "voy a sala de máquinas", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "sala_maquinas"}, "confidence": 0.92, "reply": "Voy a sala de máquinas."}
+{"instruction": "ve a sala de máquinas", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "sala_maquinas"}, "confidence": 0.92, "reply": "Voy a sala de máquinas."}
+{"instruction": "dirígete a sala de máquinas", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "sala_maquinas"}, "confidence": 0.92, "reply": "Voy a sala de máquinas."}
+{"instruction": "navega hasta sala de máquinas", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "sala_maquinas"}, "confidence": 0.92, "reply": "Voy a sala de máquinas."}
+{"instruction": "go to machine room", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "sala_maquinas"}, "confidence": 0.92, "reply": "Voy a sala de máquinas."}
+{"instruction": "lleva el robot a sala de máquinas", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "sala_maquinas"}, "confidence": 0.92, "reply": "Voy a sala de máquinas."}
+{"instruction": "voy a recepción", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "recepcion"}, "confidence": 0.92, "reply": "Voy a recepción."}
+{"instruction": "ve a recepción", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "recepcion"}, "confidence": 0.92, "reply": "Voy a recepción."}
+{"instruction": "dirígete a recepción", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "recepcion"}, "confidence": 0.92, "reply": "Voy a recepción."}
+{"instruction": "navega hasta recepción", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "recepcion"}, "confidence": 0.92, "reply": "Voy a recepción."}
+{"instruction": "go to reception", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "recepcion"}, "confidence": 0.92, "reply": "Voy a recepción."}
+{"instruction": "lleva el robot a recepción", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "recepcion"}, "confidence": 0.92, "reply": "Voy a recepción."}
+{"instruction": "voy a oficina", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "oficina"}, "confidence": 0.92, "reply": "Voy a oficina."}
+{"instruction": "ve a oficina", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "oficina"}, "confidence": 0.92, "reply": "Voy a oficina."}
+{"instruction": "dirígete a oficina", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "oficina"}, "confidence": 0.92, "reply": "Voy a oficina."}
+{"instruction": "navega hasta oficina", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "oficina"}, "confidence": 0.92, "reply": "Voy a oficina."}
+{"instruction": "go to office", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "oficina"}, "confidence": 0.92, "reply": "Voy a oficina."}
+{"instruction": "lleva el robot a oficina", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "oficina"}, "confidence": 0.92, "reply": "Voy a oficina."}
+{"instruction": "voy a centro", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "centro"}, "confidence": 0.92, "reply": "Voy a centro."}
+{"instruction": "ve a centro", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "centro"}, "confidence": 0.92, "reply": "Voy a centro."}
+{"instruction": "dirígete a centro", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "centro"}, "confidence": 0.92, "reply": "Voy a centro."}
+{"instruction": "navega hasta centro", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "centro"}, "confidence": 0.92, "reply": "Voy a centro."}
+{"instruction": "go to center", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "centro"}, "confidence": 0.92, "reply": "Voy a centro."}
+{"instruction": "lleva el robot a centro", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "centro"}, "confidence": 0.92, "reply": "Voy a centro."}
+{"instruction": "voy a pasillo norte", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_norte"}, "confidence": 0.92, "reply": "Voy a pasillo norte."}
+{"instruction": "ve a pasillo norte", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_norte"}, "confidence": 0.92, "reply": "Voy a pasillo norte."}
+{"instruction": "dirígete a pasillo norte", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_norte"}, "confidence": 0.92, "reply": "Voy a pasillo norte."}
+{"instruction": "navega hasta pasillo norte", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_norte"}, "confidence": 0.92, "reply": "Voy a pasillo norte."}
+{"instruction": "go to north corridor", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_norte"}, "confidence": 0.92, "reply": "Voy a pasillo norte."}
+{"instruction": "lleva el robot a pasillo norte", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_norte"}, "confidence": 0.92, "reply": "Voy a pasillo norte."}
+{"instruction": "voy a pasillo sur", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_sur"}, "confidence": 0.92, "reply": "Voy a pasillo sur."}
+{"instruction": "ve a pasillo sur", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_sur"}, "confidence": 0.92, "reply": "Voy a pasillo sur."}
+{"instruction": "dirígete a pasillo sur", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_sur"}, "confidence": 0.92, "reply": "Voy a pasillo sur."}
+{"instruction": "navega hasta pasillo sur", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_sur"}, "confidence": 0.92, "reply": "Voy a pasillo sur."}
+{"instruction": "go to south corridor", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_sur"}, "confidence": 0.92, "reply": "Voy a pasillo sur."}
+{"instruction": "lleva el robot a pasillo sur", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_sur"}, "confidence": 0.92, "reply": "Voy a pasillo sur."}
+{"instruction": "voy a pasillo este", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_este"}, "confidence": 0.92, "reply": "Voy a pasillo este."}
+{"instruction": "ve a pasillo este", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_este"}, "confidence": 0.92, "reply": "Voy a pasillo este."}
+{"instruction": "dirígete a pasillo este", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_este"}, "confidence": 0.92, "reply": "Voy a pasillo este."}
+{"instruction": "navega hasta pasillo este", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_este"}, "confidence": 0.92, "reply": "Voy a pasillo este."}
+{"instruction": "go to east corridor", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_este"}, "confidence": 0.92, "reply": "Voy a pasillo este."}
+{"instruction": "lleva el robot a pasillo este", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_este"}, "confidence": 0.92, "reply": "Voy a pasillo este."}
+{"instruction": "voy a pasillo oeste", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_oeste"}, "confidence": 0.92, "reply": "Voy a pasillo oeste."}
+{"instruction": "ve a pasillo oeste", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_oeste"}, "confidence": 0.92, "reply": "Voy a pasillo oeste."}
+{"instruction": "dirígete a pasillo oeste", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_oeste"}, "confidence": 0.92, "reply": "Voy a pasillo oeste."}
+{"instruction": "navega hasta pasillo oeste", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_oeste"}, "confidence": 0.92, "reply": "Voy a pasillo oeste."}
+{"instruction": "go to west corridor", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_oeste"}, "confidence": 0.92, "reply": "Voy a pasillo oeste."}
+{"instruction": "lleva el robot a pasillo oeste", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "pasillo_oeste"}, "confidence": 0.92, "reply": "Voy a pasillo oeste."}
+{"instruction": "avanza 30 cm", "intent": "sequence", "action": "execute_motion_plan", "parameters": {"steps": [{"op": "drive", "meters": 0.3}]}, "confidence": 0.92, "reply": "Avanzo 30 cm."}
+{"instruction": "avanza 0.4 metros", "intent": "sequence", "action": "execute_motion_plan", "parameters": {"steps": [{"op": "drive", "meters": 0.4}]}, "confidence": 0.92, "reply": "Avanzo 0.4 m."}
+{"instruction": "gira 45 grados a la derecha", "intent": "sequence", "action": "execute_motion_plan", "parameters": {"steps": [{"op": "turn", "degrees": -45}]}, "confidence": 0.92, "reply": "Giro 45° a la derecha."}
+{"instruction": "volte a la izquierda 90 grados", "intent": "sequence", "action": "execute_motion_plan", "parameters": {"steps": [{"op": "turn", "degrees": 90}]}, "confidence": 0.92, "reply": "Giro 90° a la izquierda."}
+{"instruction": "espera 5 segundos", "intent": "sequence", "action": "execute_motion_plan", "parameters": {"steps": [{"op": "wait", "seconds": 5}]}, "confidence": 0.92, "reply": "Espero 5 segundos."}
+{"instruction": "ve a almacén, espera 5 segundos y luego dirígete a recepción", "intent": "sequence", "action": "execute_motion_plan", "parameters": {"steps": [{"op": "goto", "destination": "almacen"}, {"op": "wait", "seconds": 5}, {"op": "goto", "destination": "recepcion"}]}, "confidence": 0.92, "reply": "Voy al almacén, espero 5 s y luego a recepción."}
+{"instruction": "avanza 30 cm y luego gira 45 grados a la derecha y avanza otros 40 cm", "intent": "sequence", "action": "execute_motion_plan", "parameters": {"steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}, {"op": "drive", "meters": 0.4}]}, "confidence": 0.92, "reply": "Ejecuto avance, giro y segundo avance."}
+{"instruction": "go to warehouse then wait 3 seconds then go to office", "intent": "sequence", "action": "execute_motion_plan", "parameters": {"steps": [{"op": "goto", "destination": "almacen"}, {"op": "wait", "seconds": 3}, {"op": "goto", "destination": "oficina"}]}, "confidence": 0.92, "reply": "Going to warehouse, waiting, then office."}
+{"instruction": "pasa por el pasillo norte y después ve a sala de máquinas", "intent": "sequence", "action": "execute_motion_plan", "parameters": {"steps": [{"op": "goto", "destination": "pasillo_norte"}, {"op": "goto", "destination": "sala_maquinas"}]}, "confidence": 0.92, "reply": "Paso por el pasillo norte y voy a sala de máquinas."}
+{"instruction": "avanza", "intent": "navigate", "action": "send_navigation_goal", "parameters": {"destination": "adelante"}, "confidence": 0.92, "reply": "Avanzo."}
+{"instruction": "detén", "intent": "cancel_navigation", "action": "cancel_navigation", "parameters": {}, "confidence": 0.92, "reply": "Deteniendo."}
+{"instruction": "qué tiempo hace", "intent": "unknown", "action": "unknown_action", "parameters": {}, "confidence": 0.92, "reply": "Eso está fuera de mi dominio."}
+{"instruction": "hazme un café", "intent": "unknown", "action": "unknown_action", "parameters": {}, "confidence": 0.92, "reply": "No puedo preparar café."}

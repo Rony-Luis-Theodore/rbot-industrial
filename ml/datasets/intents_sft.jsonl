@@ -1,0 +1,111 @@
+{"instruction": "muéstrame los topics", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "lista los topics", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "qué topics hay", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "dame los topics ros", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "topics activos", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "enséñame los topics del robot", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "show topics", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "list ros topics", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "quiero ver los topics", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "cuáles son los topics", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "muéstrame los nodos", "output": "{\"intent\": \"list_nodes\", \"action\": \"ros2 node list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "qué nodos hay activos", "output": "{\"intent\": \"list_nodes\", \"action\": \"ros2 node list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "lista nodos", "output": "{\"intent\": \"list_nodes\", \"action\": \"ros2 node list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "nodos ros2", "output": "{\"intent\": \"list_nodes\", \"action\": \"ros2 node list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "show nodes", "output": "{\"intent\": \"list_nodes\", \"action\": \"ros2 node list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "list nodes", "output": "{\"intent\": \"list_nodes\", \"action\": \"ros2 node list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "dame los nodos del sistema", "output": "{\"intent\": \"list_nodes\", \"action\": \"ros2 node list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "nodos activos ahora", "output": "{\"intent\": \"list_nodes\", \"action\": \"ros2 node list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "lista servicios", "output": "{\"intent\": \"list_services\", \"action\": \"ros2 service list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "muéstrame los services", "output": "{\"intent\": \"list_services\", \"action\": \"ros2 service list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "qué servicios hay", "output": "{\"intent\": \"list_services\", \"action\": \"ros2 service list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "list services", "output": "{\"intent\": \"list_services\", \"action\": \"ros2 service list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "lista actions", "output": "{\"intent\": \"list_actions\", \"action\": \"ros2 action list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "muéstrame las actions", "output": "{\"intent\": \"list_actions\", \"action\": \"ros2 action list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "qué acciones ros hay", "output": "{\"intent\": \"list_actions\", \"action\": \"ros2 action list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "list actions", "output": "{\"intent\": \"list_actions\", \"action\": \"ros2 action list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "avanza", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "adelante", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "avanza un poco", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "avanza en línea recta", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "muévete hacia adelante", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "go forward", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "drive forward", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "camina hacia adelante", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "sigue recto", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "avanza despacio", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "ve a la estación a", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"estación A\"}, \"confidence\": 0.95}"}
+{"instruction": "ve a la estación b", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"estación B\"}, \"confidence\": 0.95}"}
+{"instruction": "ve a revisar la fuga de la bomba 3", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"fuga bomba 3\"}, \"confidence\": 0.95}"}
+{"instruction": "inspecciona la bomba 3", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"bomba 3\"}, \"confidence\": 0.95}"}
+{"instruction": "dirígete al tanque 2", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"tanque 2\"}, \"confidence\": 0.95}"}
+{"instruction": "ve a la zona de peligros", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"zona peligros\"}, \"confidence\": 0.95}"}
+{"instruction": "revisa la fuga", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"fuga\"}, \"confidence\": 0.95}"}
+{"instruction": "ve a la entrada", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"entrada\"}, \"confidence\": 0.95}"}
+{"instruction": "navega a home", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"home\"}, \"confidence\": 0.95}"}
+{"instruction": "undock", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"undock\"}, \"confidence\": 0.95}"}
+{"instruction": "desatraca", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"undock\"}, \"confidence\": 0.95}"}
+{"instruction": "detén", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "detén el robot", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "para", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "parar", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "frena", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "stop", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "halt", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "cancela la navegación", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "deja de moverte", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "quieto", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "stop robot", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "regresa a la base", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "vuelve a casa", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "ve a home", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "dock", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "atraca", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "regresa al dock", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "return home", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "vuelve a la base", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "carga la batería en base", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "hola cómo estás", "output": "{\"intent\": \"unknown\", \"action\": \"unknown_action\", \"parameters\": {}, \"confidence\": 0.3}"}
+{"instruction": "qué hora es", "output": "{\"intent\": \"unknown\", \"action\": \"unknown_action\", \"parameters\": {}, \"confidence\": 0.3}"}
+{"instruction": "cuéntame un chiste", "output": "{\"intent\": \"unknown\", \"action\": \"unknown_action\", \"parameters\": {}, \"confidence\": 0.3}"}
+{"instruction": "receta de pasta", "output": "{\"intent\": \"unknown\", \"action\": \"unknown_action\", \"parameters\": {}, \"confidence\": 0.3}"}
+{"instruction": "who are you", "output": "{\"intent\": \"unknown\", \"action\": \"unknown_action\", \"parameters\": {}, \"confidence\": 0.3}"}
+{"instruction": "necesito que el robot avance un metro", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "por favor detén la marcha", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "quiero ver qué nodos están corriendo", "output": "{\"intent\": \"list_nodes\", \"action\": \"ros2 node list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "enséñame el listado de topics", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "el operario pide retorno a base", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "ve a chequear la fuga de gas", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"fuga de gas\"}, \"confidence\": 0.95}"}
+{"instruction": "enséñame qué topics están publicados", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "puedes listar los topics del create3", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "necesito el listado de topics ros2", "output": "{\"intent\": \"list_topics\", \"action\": \"ros2 topic list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "dime los nodos que están vivos", "output": "{\"intent\": \"list_nodes\", \"action\": \"ros2 node list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "qué nodos ros hay corriendo", "output": "{\"intent\": \"list_nodes\", \"action\": \"ros2 node list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "muéstrame services disponibles", "output": "{\"intent\": \"list_services\", \"action\": \"ros2 service list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "qué actions tiene el robot", "output": "{\"intent\": \"list_actions\", \"action\": \"ros2 action list\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "acércate a la bomba 3", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"bomba 3\"}, \"confidence\": 0.95}"}
+{"instruction": "ve a inspeccionar el tanque 1", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"tanque 1\"}, \"confidence\": 0.95}"}
+{"instruction": "dirígete a la estación de carga", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"estación de carga\"}, \"confidence\": 0.95}"}
+{"instruction": "ve a la zona de válvulas", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"zona de válvulas\"}, \"confidence\": 0.95}"}
+{"instruction": "revisa la fuga de gas en el área B", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"fuga de gas área B\"}, \"confidence\": 0.95}"}
+{"instruction": "navega hasta el laboratorio", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"laboratorio\"}, \"confidence\": 0.95}"}
+{"instruction": "ve al pasillo principal", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"pasillo principal\"}, \"confidence\": 0.95}"}
+{"instruction": "muévete hacia la salida de emergencia", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"salida de emergencia\"}, \"confidence\": 0.95}"}
+{"instruction": "ve a chequear el sensor de presión", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"sensor de presión\"}, \"confidence\": 0.95}"}
+{"instruction": "avanza medio metro", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "sigue hacia adelante", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "forward please", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"adelante\"}, \"confidence\": 0.95}"}
+{"instruction": "go to station a", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"estación A\"}, \"confidence\": 0.95}"}
+{"instruction": "inspect pump 3 leak", "output": "{\"intent\": \"navigate\", \"action\": \"send_navigation_goal\", \"parameters\": {\"destination\": \"fuga bomba 3\"}, \"confidence\": 0.95}"}
+{"instruction": "para ya", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "frena el create3", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "cancelar misión", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "emergency stop de navegación", "output": "{\"intent\": \"cancel_navigation\", \"action\": \"cancel_navigation\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "vuelve al dock", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "atraca en la base", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "regresa a la estación de carga", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "go home", "output": "{\"intent\": \"return_home\", \"action\": \"return_home\", \"parameters\": {}, \"confidence\": 0.95}"}
+{"instruction": "cuál es la capital de francia", "output": "{\"intent\": \"unknown\", \"action\": \"unknown_action\", \"parameters\": {}, \"confidence\": 0.3}"}
+{"instruction": "pon música", "output": "{\"intent\": \"unknown\", \"action\": \"unknown_action\", \"parameters\": {}, \"confidence\": 0.3}"}
+{"instruction": "abre youtube", "output": "{\"intent\": \"unknown\", \"action\": \"unknown_action\", \"parameters\": {}, \"confidence\": 0.3}"}
+{"instruction": "traduce esto al inglés", "output": "{\"intent\": \"unknown\", \"action\": \"unknown_action\", \"parameters\": {}, \"confidence\": 0.3}"}

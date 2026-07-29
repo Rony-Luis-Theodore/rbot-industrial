@@ -1,0 +1,163 @@
+/**
+ * Adaptación fluida dentro del rango usable.
+ * Bajo 1100×640: layout fijo al mínimo + scrollbars (↑↓ ←→).
+ * Por encima: sin scrollbars; mapa | chat se redistribuyen.
+ */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  /* Sin barras mientras quepa el layout usable */
+  overflow: hidden;
+}
+
+.shell {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 0;
+  min-height: 0;
+  grid-template-rows: var(--top) minmax(0, 1fr) var(--powered);
+}
+
+.app-body {
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  min-width: 0;
+  min-height: 0;
+}
+
+.rail {
+  flex-direction: column;
+  border-right: 1px solid rgba(62, 207, 255, 0.1);
+  border-bottom: 0;
+}
+
+.workspace {
+  /* Mapa crece/encoge; chat con ancho fluido acotado */
+  grid-template-columns: minmax(0, 1fr) clamp(300px, 34vw, 420px);
+  grid-template-rows: minmax(0, 1fr);
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+
+.workspace.side-collapsed {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.workspace > .stage,
+.workspace > .side {
+  min-width: 0;
+  min-height: 0;
+}
+
+.topbar {
+  grid-template-columns: auto auto minmax(0, 1fr);
+}
+
+.status-cluster {
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Compactar chrome si la altura es justa (sigue sin scrollbars) */
+@media (max-height: 760px) {
+  :root {
+    --top: 50px;
+    --powered: 38px;
+    --workspace-pad: 0.65rem;
+  }
+
+  .lab-arena-top {
+    padding: 0.65rem 0.9rem 0.45rem;
+  }
+
+  .lab-dock {
+    padding: 0.55rem 0.85rem 0.65rem;
+  }
+
+  .panel-head {
+    padding: 0.7rem 0.9rem 0.3rem;
+  }
+
+  .composer {
+    padding: 0.55rem 0.9rem 0.7rem;
+  }
+
+  .composer textarea {
+    min-height: 64px;
+  }
+
+  .powered-by-logos img {
+    height: 22px;
+  }
+
+  .powered-by-logos .powered-kalman {
+    height: 18px;
+  }
+}
+
+@media (max-width: 1280px) {
+  :root {
+    --workspace-pad: 0.7rem;
+  }
+
+  .workspace {
+    gap: 0.7rem;
+    grid-template-columns: minmax(0, 1fr) clamp(280px, 32vw, 380px);
+  }
+}
+
+/*
+ * Límite: recién aquí aparecen scrollbars.
+ * El shell se fija al mínimo usable; el body hace scroll.
+ */
+@media (max-width: 1099px), (max-height: 639px) {
+  body {
+    overflow: auto;
+  }
+
+  .shell {
+    width: max(100%, var(--ui-min-w));
+    height: max(100dvh, var(--ui-min-h));
+    min-width: var(--ui-min-w);
+    min-height: var(--ui-min-h);
+    max-width: none;
+    max-height: none;
+  }
+
+  .workspace {
+    grid-template-columns: minmax(0, 1fr) 380px;
+  }
+
+  /* Aviso fijo que no empuja el layout (no suma altura al flujo) */
+  body::before {
+    content: "Ventana bajo el mínimo — usa las barras de desplazamiento o amplía (≥1100×640)";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.7rem;
+    font-family: var(--font-display);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #041018;
+    background: linear-gradient(90deg, var(--accent), #2ab8e8);
+    pointer-events: none;
+  }
+
+  .shell {
+    /* hueco bajo el aviso fijo */
+    padding-top: 1.6rem;
+    box-sizing: border-box;
+  }
+}

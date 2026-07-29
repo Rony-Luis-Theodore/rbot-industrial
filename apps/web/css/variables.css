@@ -1,0 +1,58 @@
+/**
+ * R-Bot Lab — tema Sonar (murciélago)
+ * Carbón mate + cian eléctrico (logo) + plata en bordes.
+ * Cyan solo en acentos / activos (no todo glow).
+ */
+
+:root {
+  --ink: #07090c;
+  --ink-2: #10151b;
+  --charcoal: #12171e;
+  --charcoal-2: #1a222c;
+  --steel: #8b9aab;
+  --silver: #c5d0dc;
+
+  --bg: #0a0e13;
+  --bg-elevated: var(--charcoal);
+  --surface: #141b24;
+  --surface-2: #1c2530;
+  --line: rgba(197, 208, 220, 0.12);
+  --line-strong: rgba(88, 217, 255, 0.28);
+
+  --text: #e8eef4;
+  --text-2: #9aabbc;
+  --text-3: #6d7d8f;
+  --text-on-ink: #f2f6fa;
+
+  --accent: #3ecfff;
+  --accent-2: #58d9ff;
+  --accent-dim: #1a8fb8;
+  --accent-soft: rgba(62, 207, 255, 0.14);
+  --accent-glow: 0 0 18px rgba(62, 207, 255, 0.35);
+  --action: #3ecfff;
+  --ok: #3dd68c;
+  --warn: #f0c14a;
+  --danger: #ff5c6c;
+  --danger-bg: rgba(255, 92, 108, 0.12);
+
+  --font: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Rajdhani", "IBM Plex Sans", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --radius: 16px;
+  --radius-sm: 12px;
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.28);
+  --ease: 220ms cubic-bezier(0.2, 0, 0.38, 0.9);
+  --spring: 480ms cubic-bezier(0.34, 1.25, 0.64, 1);
+
+  --top: 56px;
+  --rail: 64px;
+  --side: clamp(300px, 34vw, 420px);
+  --powered: 44px;
+  --workspace-pad: 0.9rem;
+
+  /* Bajo esto → scrollbars; arriba → adapta sin barras */
+  --ui-min-w: 1100px;
+  --ui-min-h: 640px;
+}

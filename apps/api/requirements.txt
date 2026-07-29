@@ -1,0 +1,18 @@
+# =============================================================================
+# R-Bot — Dependencias del Backend
+# =============================================================================
+# Instalar con: pip install -r requirements.txt
+# Se recomienda usar un entorno virtual (venv) antes de instalar.
+# =============================================================================
+
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+python-dotenv>=1.0.0
+httpx>=0.27.0
+PyYAML>=6.0
+Pillow>=10.0.0
+websockets>=12.0
+python-multipart>=0.0.9
+# Opcional voz local (CPU): pip install faster-whisper

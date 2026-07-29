@@ -1,0 +1,140 @@
+/**
+ * =============================================================================
+ * R-Bot — Sidebar (sidebar.css)
+ * =============================================================================
+ *
+ * Propósito:
+ *   Estilos del panel lateral: estado, placeholders, event log.
+ * =============================================================================
+ */
+
+/* Grid de estado */
+.status-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm) var(--space-md);
+}
+
+.status-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.status-item-full {
+  grid-column: 1 / -1;
+}
+
+.status-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.status-value {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.status-value-mono {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+}
+
+/* Barra de batería */
+.battery-bar {
+  margin-top: var(--space-md);
+  height: 4px;
+  background: var(--color-bg-primary);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.battery-fill {
+  height: 100%;
+  background: var(--color-success);
+  border-radius: 2px;
+  transition: width 0.5s ease, background 0.3s ease;
+}
+
+.battery-fill.low { background: var(--color-error); }
+.battery-fill.medium { background: var(--color-warning); }
+
+/* Placeholders mapa / LiDAR */
+.placeholder-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  background: var(--color-bg-primary);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  min-height: 100px;
+}
+
+.placeholder-view p {
+  font-size: var(--font-size-sm);
+}
+
+.placeholder-tag {
+  font-size: var(--font-size-xs);
+  padding: 2px 8px;
+  background: var(--color-bg-elevated);
+  border-radius: 999px;
+  color: var(--color-text-muted);
+}
+
+/* Registro de eventos */
+.event-log {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  max-height: 220px;
+}
+
+.event-empty {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-md);
+}
+
+.event-entry {
+  display: flex;
+  gap: var(--space-sm);
+  padding: var(--space-sm);
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  border-left: 3px solid var(--color-info);
+}
+
+.event-entry.event-info { border-left-color: var(--color-info); }
+.event-entry.event-success { border-left-color: var(--color-success); }
+.event-entry.event-warning { border-left-color: var(--color-warning); }
+.event-entry.event-error { border-left-color: var(--color-error); }
+
+.event-time {
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.event-message {
+  color: var(--color-text-secondary);
+  word-break: break-word;
+}
+
+.event-source {
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  font-size: 0.65rem;
+}

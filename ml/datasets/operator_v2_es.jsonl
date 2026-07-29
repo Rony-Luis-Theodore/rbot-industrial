@@ -1,0 +1,735 @@
+{"text": "necesito que retrocede", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "adelante 80 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}], "reply": "Avanzo 80 cm."}
+{"text": "muéstrame las actions", "intent": "list_actions", "destination": null, "reply": "Consulto las actions ROS2."}
+{"text": "lista servicios", "intent": "list_services", "destination": null, "reply": "Consulto los servicios disponibles."}
+{"text": "atrás ahora", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "oiga lista los topics ya", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "gira derecha 45", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -45}], "reply": "Giro 45° a la derecha."}
+{"text": "oiga retrocede", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "puedes adelante ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "oiga lista los topics ahora", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "undock", "intent": "navigate", "destination": "undock", "reply": "Desatracando del dock."}
+{"text": "gira a la izquierda en 45 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 45}], "reply": "Giro 45° a la izquierda."}
+{"text": "ayuda ahora", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "adelante ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "puedes regresa a la base ya", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "primero avanza 20 cm seguidamente gira 30 a la derecha por último avanza 10 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": -30}, {"op": "drive", "meters": 0.1}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "volte 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -90}], "reply": "Giro 90° a la derecha."}
+{"text": "necesito que gira a la izquierda ahora", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "por favor lista los topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "quiero que gira a la izquierda por favor", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "por favor gira a la derecha por favor", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "puedes ayuda ya", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "avanza 15 cm y luego gira a la izquierda en 30 grados", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.15}, {"op": "turn", "degrees": 30}], "reply": "Avanzo 15 cm y giro 30° a la izquierda."}
+{"text": "avanza", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "primero avanza 30 cm seguidamente gira 45 a la derecha por último avanza 15 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}, {"op": "drive", "meters": 0.15}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "robot, para atrás", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "oiga lista nodos", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "avanza 1 metro", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 1.0}], "reply": "Avanzo 1.0 m."}
+{"text": "avanza 30 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}], "reply": "Avanzo 30 cm."}
+{"text": "para por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "gira 90 a la derecha después avanza 0.5 metros", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.5}], "reply": "Giro 90° a la derecha y avanzo 0.5 m."}
+{"text": "quiero que gira a la izquierda ya", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "necesito que retrocede ya", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "lista nodos por favor", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -90}], "reply": "Giro 90° a la derecha."}
+{"text": "oiga adelante ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "cuéntame un chiste", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "lista los topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "forward 30 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}], "reply": "Avanzo 30 cm."}
+{"text": "regresa a la base ya", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "avanza 30 cm después gira 45 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}], "reply": "Avanzo 30 cm y giro 45° a la derecha."}
+{"text": "por favor lista nodos ahora", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "turn 45 left", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 45}], "reply": "Giro 45° a la izquierda."}
+{"text": "sigue adelante por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "quiero que gira a la derecha ya", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "avanza 15 centímetros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.15}], "reply": "Avanzo 15 cm."}
+{"text": "robot, regresa a la base ahora", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "topics activos", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "adelante 18 inches", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4572}], "reply": "Avanzo 18 pulgadas (~0.4572 m)."}
+{"text": "necesito que batería", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "robot, adelante ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "status", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "por favor detén ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "robot, detén ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "puedes ayuda", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "return home", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "quiero que para ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "necesito el listado de topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "avanza un pie luego gira 90 a la izquierda finalmente avanza 12 pulgadas", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3048}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.3048}], "reply": "Avanzo un pie, giro y avanzo 12 pulgadas."}
+{"text": "lista nodos", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "oiga para ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza 20 cm , gira 30 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": 30}], "reply": "Avanzo 20 cm y giro 30° a la izquierda."}
+{"text": "gira a la derecha en 45 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -45}], "reply": "Giro 45° a la derecha."}
+{"text": "forward 10 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.1}], "reply": "Avanzo 10 cm."}
+{"text": "forward 50 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}], "reply": "Avanzo 50 cm."}
+{"text": "adelante 20 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}], "reply": "Avanzo 20 cm."}
+{"text": "necesito que lista nodos ahora", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "avanza 0.4 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}], "reply": "Avanzo 0.4 m."}
+{"text": "avanza 0.5 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}], "reply": "Avanzo 0.5 m."}
+{"text": "retrocede ya", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "adelante ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "lista los topics ros", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "avanza 50 centímetros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}], "reply": "Avanzo 50 cm."}
+{"text": "primero avanza 20 cm después gira 30 a la derecha por último avanza 10 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": -30}, {"op": "drive", "meters": 0.1}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "en primer lugar avanza 0.80 metros después gira 90 a la izquierda por último avanza 0.40 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.4}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "por favor lista nodos ya", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "gira a la derecha 180 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -180}], "reply": "Giro 180° a la derecha."}
+{"text": "necesito que avanza ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "necesito que avanza", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "turn 90 right", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -90}], "reply": "Giro 90° a la derecha."}
+{"text": "por favor ayuda ahora", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "necesito que regresa a la base ahora", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "rota 45 a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 45}], "reply": "Giro 45° a la izquierda."}
+{"text": "nodos activos ahora", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "rota 90 a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 90}], "reply": "Giro 90° a la izquierda."}
+{"text": "quiero que regresa a la base por favor", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "robot, regresa a la base ya", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "necesito que para", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "inspecciona válvula 2", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "primero avanza 30 cm a continuación gira 45 a la derecha finalmente avanza 15 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}, {"op": "drive", "meters": 0.15}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "abre el navegador", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "por favor adelante ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "en primer lugar avanza 0.50 metros después gira 90 a la izquierda por último avanza 0.25 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.25}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "necesito que lista nodos por favor", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "necesito que detén", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "muéstrame los topics ros2", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "puedes retrocede ya", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "help", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "por favor lista los topics ahora", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "quiero que batería por favor", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "primero avanza 80 cm y luego gira 90 a la derecha y finalmente avanza 40 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.4}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "oiga avanza", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "avanza 40 cm luego gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 40 cm y giro 90° a la izquierda."}
+{"text": "por favor batería", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "hola robot", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "adelante 30 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}], "reply": "Avanzo 30 cm."}
+{"text": "avanza 30 cm y luego gira a la derecha en 45 grados y avanza en línea recta otros 10 cm y para", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}, {"op": "drive", "meters": 0.1}, {"op": "stop"}], "reply": "Avanzo, giro, avanzo 10 cm y paro."}
+{"text": "avanza 30 cm y gira 45 grados a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}], "reply": "Avanzo 30 cm y giro 45° a la derecha."}
+{"text": "show topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "por favor avanza ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "gira derecha 180", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -180}], "reply": "Giro 180° a la derecha."}
+{"text": "oiga gira a la derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "sigue adelante", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "necesito que estado del robot", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "estado del robot ya", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "gira derecha 90", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -90}], "reply": "Giro 90° a la derecha."}
+{"text": "quiero que avanza ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "list topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "robot, lista los topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "oiga ayuda", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "gira 180° a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -180}], "reply": "Giro 180° a la derecha."}
+{"text": "actions ros2", "intent": "list_actions", "destination": null, "reply": "Consulto las actions ROS2."}
+{"text": "primero avanza 50 cm después gira 90 a la derecha por último avanza 25 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.25}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "por favor ayuda por favor", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "list services", "intent": "list_services", "destination": null, "reply": "Consulto los servicios disponibles."}
+{"text": "robot, retrocede por favor", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "list ros topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "necesito que lista los topics por favor", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "robot, estado del robot ya", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "oiga lista nodos por favor", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "por favor gira izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "quiero que ayuda ya", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "necesito que para por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza 40 cm y luego gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 40 cm y giro 90° a la derecha."}
+{"text": "robot, gira derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "avanza 40 cm después gira 90 a la derecha y por último retrocede 10 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": -0.1}], "reply": "Avanzo, giro a la derecha y retrocedo."}
+{"text": "qué actions hay", "intent": "list_actions", "destination": null, "reply": "Consulto las actions ROS2."}
+{"text": "robot, avanza por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "avanza 80 cm y luego gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 80 cm y giro 90° a la derecha."}
+{"text": "adelante 1 feet", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3048}], "reply": "Avanzo 1 pie(s) (~0.3048 m)."}
+{"text": "necesito que adelante ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "gira 180 grados a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -180}], "reply": "Giro 180° a la derecha."}
+{"text": "gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 90}], "reply": "Giro 90° a la izquierda."}
+{"text": "qué tiempo hace mañana", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "gira a la derecha ya", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "quiero que para por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "robot, batería por favor", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "cómo estás", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "avanza 80 cm después gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 80 cm y giro 90° a la izquierda."}
+{"text": "robot, lista los topics por favor", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "gira a la izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "volte a la derecha por favor", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "para", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "atraca", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "necesito que lista los topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "puedes detén por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "primero avanza 40 cm después gira 90 a la derecha por último avanza 20 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.2}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "forward 80 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}], "reply": "Avanzo 80 cm."}
+{"text": "adelante 6 inches", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.1524}], "reply": "Avanzo 6 pulgadas (~0.1524 m)."}
+{"text": "avanza 30 cm después gira 45 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": 45}], "reply": "Avanzo 30 cm y giro 45° a la izquierda."}
+{"text": "estado del robot por favor", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "volte 30 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -30}], "reply": "Giro 30° a la derecha."}
+{"text": "adelante 2 feet", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.6096}], "reply": "Avanzo 2 pie(s) (~0.6096 m)."}
+{"text": "dale", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "primero avanza 80 cm seguidamente gira 90 a la derecha por último avanza 40 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.4}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "para atrás ahora", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "por favor adelante por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "quiero que detén", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "por favor batería ahora", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "avanza 20 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}], "reply": "Avanzo 20 cm."}
+{"text": "quiero que gira a la derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "necesito que estado del robot ahora", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "puedes lista los topics ahora", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "por favor estado del robot ya", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "gira a la derecha 45 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -45}], "reply": "Giro 45° a la derecha."}
+{"text": "avanza 20 cm y luego gira 30 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": 30}], "reply": "Avanzo 20 cm y giro 30° a la izquierda."}
+{"text": "robot, batería ya", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "forward 20 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}], "reply": "Avanzo 20 cm."}
+{"text": "robot, estado del robot", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "muéstrame los nodos", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "oiga lista los topics por favor", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "ve a almacén", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "go to warehouse", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "por favor gira a la izquierda por favor", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "robot, lista nodos por favor", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "robot, detén", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza un poco 25 cm y detente", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.25}, {"op": "stop"}], "reply": "Avanzo 25 cm y me detengo."}
+{"text": "oiga gira a la derecha por favor", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "detén", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "oiga batería ya", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "espera 2 s", "intent": "sequence", "destination": null, "steps": [{"op": "wait", "seconds": 2}], "reply": "Espero 2 segundos."}
+{"text": "gira izquierda 45", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 45}], "reply": "Giro 45° a la izquierda."}
+{"text": "primero avanza 50 cm a continuación gira 90 a la derecha finalmente avanza 25 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.25}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "adelante 0.8 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}], "reply": "Avanzo 0.8 m."}
+{"text": "batería por favor", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "puedes adelante", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "por favor gira a la izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "quiero que retrocede ahora", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "quiero que lista los topics ahora", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "qué piensas de la IA", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "perfecto", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "gira 45 grados a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -45}], "reply": "Giro 45° a la derecha."}
+{"text": "primero avanza 50 cm seguidamente gira 90 a la derecha por último avanza 25 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.25}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "quiero que adelante por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "necesito que regresa a la base", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "necesito que estado del robot ya", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "sal del dock", "intent": "navigate", "destination": "undock", "reply": "Desatracando del dock."}
+{"text": "rota 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -90}], "reply": "Giro 90° a la derecha."}
+{"text": "instrucciones", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "avanza 20 cm después gira 30 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": -30}], "reply": "Avanzo 20 cm y giro 30° a la derecha."}
+{"text": "robot, para ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "puedes detén", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza 20 centímetros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}], "reply": "Avanzo 20 cm."}
+{"text": "oiga retrocede por favor", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "oiga estado del robot por favor", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "puedes adelante por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "primeramente avanza 25 cm a continuación gira 45 a la izquierda acto seguido avanza 15 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.25}, {"op": "turn", "degrees": 45}, {"op": "drive", "meters": 0.15}], "reply": "Ejecuto avance, giro a la izquierda y avance."}
+{"text": "cancela", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "robot, regresa a la base", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "puedes regresa a la base por favor", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "quiero que ayuda ahora", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "quiero que detén por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "quiero que ayuda por favor", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "espera 5 segundos", "intent": "sequence", "destination": null, "steps": [{"op": "wait", "seconds": 5}], "reply": "Espero 5 segundos."}
+{"text": "primero avanza 40 cm y luego gira 90 a la derecha y finalmente avanza 20 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.2}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "retrocede 0.3 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": -0.3}], "reply": "Retrocedo 0.3 m."}
+{"text": "oiga gira a la derecha ya", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "por favor volte a la derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "primero avanza 50 cm y luego gira 90 a la derecha y finalmente avanza 25 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.25}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "por favor gira a la izquierda ya", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "por favor ayuda", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "quiero que gira a la izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "necesito que detén por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "por favor avanza por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "puedes gira a la derecha ahora", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "por favor batería por favor", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "primero avanza 80 cm luego gira 90 a la derecha finalmente avanza 50 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.5}], "reply": "Primero avance, luego giro y finalmente avance."}
+{"text": "gira 180 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -180}], "reply": "Giro 180° a la derecha."}
+{"text": "lista los topics ros2", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "robot, gira a la derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "oiga lista nodos ya", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "oiga detén", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza 0,8 m", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}], "reply": "Avanzo 0.8 m."}
+{"text": "adelante 15 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.15}], "reply": "Avanzo 15 cm."}
+{"text": "primero avanza 30 cm después gira 45 a la derecha por último avanza 15 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}, {"op": "drive", "meters": 0.15}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "oiga adelante por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "adelante 10 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.1}], "reply": "Avanzo 10 cm."}
+{"text": "en primer lugar avanza 0.40 metros y luego gira 90 a la izquierda y finalmente avanza 0.20 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.2}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "volte a la izquierda por favor", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "avanza ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "oiga retrocede ahora", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "gira a la izquierda 90 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 90}], "reply": "Giro 90° a la izquierda."}
+{"text": "robot, ayuda ya", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "necesito que gira a la derecha ahora", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "avanza 30 cm y luego gira 45 grados a la derecha y avanza 40 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}, {"op": "drive", "meters": 0.4}], "reply": "Ejecuto avance, giro y segundo avance."}
+{"text": "por favor estado del robot ahora", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "robot, volte a la derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "oiga avanza ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "forward 25 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.25}], "reply": "Avanzo 25 cm."}
+{"text": "quiero que regresa a la base ya", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "puedes lista nodos por favor", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "avanza 40 cm y luego gira a la izquierda en 90 grados", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 40 cm y giro 90° a la izquierda."}
+{"text": "adelante 0.5 m", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}], "reply": "Avanzo 0.5 m."}
+{"text": "forward 18 in", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4572}], "reply": "Avanzo 18 pulgadas (~0.4572 m)."}
+{"text": "gira izquierda 60", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 60}], "reply": "Giro 60° a la izquierda."}
+{"text": "rota 60 a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 60}], "reply": "Giro 60° a la izquierda."}
+{"text": "avanza 40 cm , gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 40 cm y giro 90° a la derecha."}
+{"text": "avanza 30 cm y luego gira 45 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": 45}], "reply": "Avanzo 30 cm y giro 45° a la izquierda."}
+{"text": "para ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "en primer lugar avanza 0.50 metros a continuación gira 90 a la izquierda finalmente avanza 0.25 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.25}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "cuáles son los topics publicados", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "robot, regresa a la base por favor", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "quiero que batería", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "puedes avanza por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "necesito que lista los topics ahora", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "oiga lista los topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "en primer lugar avanza 0.20 metros seguidamente gira 30 a la izquierda por último avanza 0.10 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": 30}, {"op": "drive", "meters": 0.1}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "oiga gira a la derecha ahora", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "ve a almacén y luego a recepción", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "adelante 40 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}], "reply": "Avanzo 40 cm."}
+{"text": "oiga estado del robot ahora", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "por favor regresa a la base", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "necesito que lista nodos ya", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "gira derecha ahora", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "necesito que gira a la izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "adelante 1 m", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 1.0}], "reply": "Avanzo 1.0 m."}
+{"text": "necesito que avanza por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "atrás por favor", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "gira derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "gira 45° a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -45}], "reply": "Giro 45° a la derecha."}
+{"text": "robot, lista nodos ya", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "avanza 25 centímetros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.25}], "reply": "Avanzo 25 cm."}
+{"text": "puedes para por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "quiero que adelante ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "volte a la izquierda ahora", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "puedes lista los topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "avanza 80 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}], "reply": "Avanzo 80 cm."}
+{"text": "batería ahora", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "sigue adelante ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "puedes listar los topics del create3", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "avanza 80 centímetros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}], "reply": "Avanzo 80 cm."}
+{"text": "robot, sigue adelante", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "adelante", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "por favor lista los topics ya", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "avanza 50 cm luego gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 50 cm y giro 90° a la derecha."}
+{"text": "quiero que regresa a la base ahora", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "gira a la izquierda 60 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 60}], "reply": "Giro 60° a la izquierda."}
+{"text": "forward 0.4 meters", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}], "reply": "Avanzo 0.4 m."}
+{"text": "para ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "oiga adelante ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "avanza 50 cm y luego gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 50 cm y giro 90° a la derecha."}
+{"text": "avanza 10 centímetros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.1}], "reply": "Avanzo 10 cm."}
+{"text": "regresa a la base por favor", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "avanza 15 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.15}], "reply": "Avanzo 15 cm."}
+{"text": "silencio", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "robot, retrocede ahora", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "robot, gira a la izquierda ahora", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "puedes retrocede ahora", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "qué puedes hacer", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "avanza 80 cm , gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 80 cm y giro 90° a la izquierda."}
+{"text": "quiero que estado del robot", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "quiero que adelante", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "dame los topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "gira 30 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -30}], "reply": "Giro 30° a la derecha."}
+{"text": "cómo te hablo", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "oiga batería", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "quiero que adelante ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "avanza 15 cm y gira 30 grados a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.15}, {"op": "turn", "degrees": -30}], "reply": "Avanzo 15 cm y giro 30° a la derecha."}
+{"text": "gira a la izquierda en 60 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 60}], "reply": "Giro 60° a la izquierda."}
+{"text": "adelante 12 inches", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3048}], "reply": "Avanzo 12 pulgadas (~0.3048 m)."}
+{"text": "turn 30 right", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -30}], "reply": "Giro 30° a la derecha."}
+{"text": "oiga estado del robot", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "avanza por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "por favor volte a la izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "en primer lugar avanza 0.30 metros a continuación gira 45 a la izquierda finalmente avanza 0.15 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": 45}, {"op": "drive", "meters": 0.15}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "modo del robot", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "avanza 0.8 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}], "reply": "Avanzo 0.8 m."}
+{"text": "por favor lista nodos por favor", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "enséñame los topics ros2", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "puedes regresa a la base", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "por favor retrocede por favor", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "necesito que para ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "necesito que adelante por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "qué nodos hay activos", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "robot, estado del robot por favor", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "quiero que lista nodos ahora", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "gira 90° a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -90}], "reply": "Giro 90° a la derecha."}
+{"text": "avanza 50 cm después gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 50 cm y giro 90° a la derecha."}
+{"text": "avanza 30 cm luego gira 45 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": 45}], "reply": "Avanzo 30 cm y giro 45° a la izquierda."}
+{"text": "quiero que lista nodos ya", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "quiero que batería ahora", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "para atrás por favor", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "avanza 20 cm, gira a la izquierda 90 grados y avanza 15 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.15}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "buenos días", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "desatraca", "intent": "navigate", "destination": "undock", "reply": "Desatracando del dock."}
+{"text": "robot, estado del robot ahora", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "avanza 50 cm , gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 50 cm y giro 90° a la izquierda."}
+{"text": "regresa a la base", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "quiero que gira a la izquierda ahora", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "primero avanza 20 cm y luego gira 30 a la derecha y finalmente avanza 10 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": -30}, {"op": "drive", "meters": 0.1}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "batería", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "detén el robot", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza 40 cm luego gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 40 cm y giro 90° a la derecha."}
+{"text": "avanza 80 cm , gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 80 cm y giro 90° a la derecha."}
+{"text": "gira derecha 30", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -30}], "reply": "Giro 30° a la derecha."}
+{"text": "primero avanza 40 cm a continuación gira 90 a la derecha finalmente avanza 20 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.2}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "necesito que retrocede por favor", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "puedes para", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "en primer lugar avanza 0.30 metros y luego gira 45 a la izquierda y finalmente avanza 0.15 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": 45}, {"op": "drive", "meters": 0.15}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "first advance 0.5 meters then turn 90 right finally advance 30 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.3}], "reply": "Advance, turn right, then advance again."}
+{"text": "código python hello world", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "avanza 50 cm después gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 50 cm y giro 90° a la izquierda."}
+{"text": "gira a la derecha en 30 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -30}], "reply": "Giro 30° a la derecha."}
+{"text": "necesito que adelante ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "batería ya", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "gracias", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "forward 15 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.15}], "reply": "Avanzo 15 cm."}
+{"text": "robot, gira izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "detén ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza un metro", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 1.0}], "reply": "Avanzo 1.0 m."}
+{"text": "en primer lugar avanza 0.80 metros y luego gira 90 a la izquierda y finalmente avanza 0.40 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.4}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "avanza 30 cm y luego gira a la izquierda en 45 grados", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": 45}], "reply": "Avanzo 30 cm y giro 45° a la izquierda."}
+{"text": "gira a la derecha 90 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -90}], "reply": "Giro 90° a la derecha."}
+{"text": "puedes gira a la izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "gira 30 grados a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -30}], "reply": "Giro 30° a la derecha."}
+{"text": "avanza 80 cm después gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 80 cm y giro 90° a la derecha."}
+{"text": "halt", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "gira 60 a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 60}], "reply": "Giro 60° a la izquierda."}
+{"text": "avanza 2 pies seguidamente gira 45 a la derecha y finalmente avanza 6 pulgadas", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.6096}, {"op": "turn", "degrees": -45}, {"op": "drive", "meters": 0.1524}], "reply": "Avanzo 2 pies, giro y avanzo 6 pulgadas."}
+{"text": "necesito que gira a la derecha por favor", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "qué topics están activos", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "servicios ros2", "intent": "list_services", "destination": null, "reply": "Consulto los servicios disponibles."}
+{"text": "avanza 80 cm y luego gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 80 cm y giro 90° a la izquierda."}
+{"text": "regresa a la base ahora", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "robot, lista nodos", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "resuelve esta integral", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "en primer lugar avanza 0.30 metros seguidamente gira 45 a la izquierda por último avanza 0.15 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": 45}, {"op": "drive", "meters": 0.15}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "avanza 40 cm después gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 40 cm y giro 90° a la derecha."}
+{"text": "quiero que lista los topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "avanza 40 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}], "reply": "Avanzo 40 cm."}
+{"text": "por favor regresa a la base por favor", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "gira a la izquierda por favor", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "oiga regresa a la base", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "en primer lugar avanza 0.50 metros y luego gira 90 a la izquierda y finalmente avanza 0.25 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.25}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "en primer lugar avanza 0.40 metros a continuación gira 90 a la izquierda finalmente avanza 0.20 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.2}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "puedes avanza ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "volte a la izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "necesito que retrocede ahora", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "gira 90° a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 90}], "reply": "Giro 90° a la izquierda."}
+{"text": "volte 60 a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 60}], "reply": "Giro 60° a la izquierda."}
+{"text": "volte 180 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -180}], "reply": "Giro 180° a la derecha."}
+{"text": "avanza 40 cm y luego gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 40 cm y giro 90° a la izquierda."}
+{"text": "quiero que gira a la derecha por favor", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "oiga adelante", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "en primer lugar gira 45 a la izquierda después avanza 60 cm por último espera 2 segundos", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 45}, {"op": "drive", "meters": 0.6}, {"op": "wait", "seconds": 2}], "reply": "Giro, avanzo y espero."}
+{"text": "dame los topics ros2", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "gira a la izquierda ya", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "por favor retrocede ahora", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "gira izquierda ahora", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "turn 60 left", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 60}], "reply": "Giro 60° a la izquierda."}
+{"text": "estado", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "oiga gira a la izquierda por favor", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "robot, gira a la izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "primero avanza 40 cm seguidamente gira 90 a la derecha por último avanza 20 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.2}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "muéstrame los services", "intent": "list_services", "destination": null, "reply": "Consulto los servicios disponibles."}
+{"text": "avanza 0.8 metros, gira 90 grados a la derecha, avanza 0.5 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.5}], "reply": "Avanzo 0.8 m, giro 90° a la derecha y avanzo 0.5 m."}
+{"text": "qué servicios hay", "intent": "list_services", "destination": null, "reply": "Consulto los servicios disponibles."}
+{"text": "puedes estado del robot por favor", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "list actions", "intent": "list_actions", "destination": null, "reply": "Consulto las actions ROS2."}
+{"text": "gira a la derecha en 90 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -90}], "reply": "Giro 90° a la derecha."}
+{"text": "por favor lista nodos", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "robot, retrocede ya", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "robot, para por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "puedes adelante ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "volte 45 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -45}], "reply": "Giro 45° a la derecha."}
+{"text": "rota 180 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -180}], "reply": "Giro 180° a la derecha."}
+{"text": "oiga gira a la izquierda ya", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "por favor gira a la derecha ahora", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "dirígete a recepción", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "necesito que lista los topics ya", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "dame los nodos del sistema", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "gira a la derecha 30 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -30}], "reply": "Giro 30° a la derecha."}
+{"text": "avanza 20 cm después gira 30 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": 30}], "reply": "Avanzo 20 cm y giro 30° a la izquierda."}
+{"text": "quiero que retrocede ya", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "list nodes", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "gira a la derecha ahora", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "receta de pasta", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "oiga lista nodos ahora", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "por favor avanza", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "gira 45° a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 45}], "reply": "Giro 45° a la izquierda."}
+{"text": "puedes gira a la izquierda ya", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "robot, para", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "quiero que estado del robot por favor", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "puedes batería ahora", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "en primer lugar avanza 0.20 metros a continuación gira 30 a la izquierda finalmente avanza 0.10 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": 30}, {"op": "drive", "meters": 0.1}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "avanza 50 cm luego gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 50 cm y giro 90° a la izquierda."}
+{"text": "oiga detén ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "quiero que avanza", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "forward 2 ft", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.6096}], "reply": "Avanzo 2 pie(s) (~0.6096 m)."}
+{"text": "por favor para por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza 40 cm y gira 90 grados a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 40 cm y giro 90° a la derecha."}
+{"text": "oiga ayuda ya", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "avanza 30 centímetros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}], "reply": "Avanzo 30 cm."}
+{"text": "muéstrame los topics ros", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "necesito que ayuda por favor", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "por favor adelante", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "puedes batería por favor", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "robot, lista los topics ahora", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "robot, adelante por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "por favor adelante ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "por favor gira a la derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "robot, gira a la derecha ya", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "oiga detén ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "adelante 50 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}], "reply": "Avanzo 50 cm."}
+{"text": "robot, adelante", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "gira a la izquierda ahora", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "por favor para", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "primero avanza 80 cm después gira 90 a la derecha por último avanza 40 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.4}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "por favor regresa a la base ya", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "stop", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "robot, ayuda", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "lista los topics ya", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "quiero que detén ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "primero avanza 30 cm y luego gira 45 a la derecha y finalmente avanza 15 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}, {"op": "drive", "meters": 0.15}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "puedes estado del robot ya", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "cancelar navegación", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "puedes lista nodos ya", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "quiero que avanza por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "oiga avanza por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "detén por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza 1 pies", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3048}], "reply": "Avanzo 1 pie(s) (~0.3048 m)."}
+{"text": "lista actions", "intent": "list_actions", "destination": null, "reply": "Consulto las actions ROS2."}
+{"text": "por favor detén ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "por favor para ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "oiga batería ahora", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "retrocede 20 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": -0.2}], "reply": "Retrocedo 20 cm."}
+{"text": "necesito que batería ya", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "necesito que estado del robot por favor", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "robot, gira a la derecha por favor", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "quiero que detén ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza 1 pie", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3048}], "reply": "Avanzo 1 pie(s) (~0.3048 m)."}
+{"text": "quiero que lista nodos", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "retrocede por favor", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "atrás", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "puedes retrocede", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "oiga regresa a la base por favor", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "oiga ayuda por favor", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "lista nodos ahora", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "avanza cero punto ocho metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}], "reply": "Avanzo 0.8 m."}
+{"text": "avanza 20 cm luego gira 30 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": 30}], "reply": "Avanzo 20 cm y giro 30° a la izquierda."}
+{"text": "avanza 50 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}], "reply": "Avanzo 50 cm."}
+{"text": "estado del robot", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "robot, atrás", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "vuelve a casa", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "por favor batería ya", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "ayuda por favor", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "robot, gira a la izquierda por favor", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "en primer lugar avanza 0.50 metros seguidamente gira 90 a la izquierda por último avanza 0.25 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.25}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "por favor avanza ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "puedes estado del robot", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "retrocede ahora", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "avanza 25 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.25}], "reply": "Avanzo 25 cm."}
+{"text": "lista los topics por favor", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "oiga para ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "gira 45 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 45}], "reply": "Giro 45° a la izquierda."}
+{"text": "oiga gira a la izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "robot, volte a la izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "forward 12 in", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3048}], "reply": "Avanzo 12 pulgadas (~0.3048 m)."}
+{"text": "puedes estado del robot ahora", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "gira 60° a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 60}], "reply": "Giro 60° a la izquierda."}
+{"text": "gira 45 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -45}], "reply": "Giro 45° a la derecha."}
+{"text": "oiga regresa a la base ya", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "robot, batería", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "en primer lugar avanza 0.40 metros después gira 90 a la izquierda por último avanza 0.20 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.2}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "quiero que estado del robot ya", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "nivel de batería", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "quiero que avanza ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "regresa al cargador", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "battery level", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "quiero ver los topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "puedes ayuda ahora", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "forward 3 ft", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.9144}], "reply": "Avanzo 3 pie(s) (~0.9144 m)."}
+{"text": "enséñame los topics ros", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "en primer lugar avanza 0.40 metros seguidamente gira 90 a la izquierda por último avanza 0.20 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.2}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "necesito que gira a la izquierda por favor", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "avanza 2 pies", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.6096}], "reply": "Avanzo 2 pie(s) (~0.6096 m)."}
+{"text": "volte 45 a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 45}], "reply": "Giro 45° a la izquierda."}
+{"text": "gira izquierda", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "por favor lista los topics por favor", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "oiga estado del robot ya", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "por favor regresa a la base ahora", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "necesito que gira a la derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "necesito que gira a la derecha ya", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "avanza 30 cm y luego gira 45 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}], "reply": "Avanzo 30 cm y giro 45° a la derecha."}
+{"text": "forward 40 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}], "reply": "Avanzo 40 cm."}
+{"text": "quiero que para", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "quiero que regresa a la base", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "por favor detén", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "robot, avanza ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "necesito que ayuda ya", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "go to warehouse then office", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "oiga para", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "volte a la derecha ahora", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "volte a la derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "robot, detén ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "cuánta batería queda", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "oiga gira a la izquierda ahora", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "adelante por favor", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "puedes avanza", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "turn 45 right", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -45}], "reply": "Giro 45° a la derecha."}
+{"text": "ve al dock", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "rota 45 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -45}], "reply": "Giro 45° a la derecha."}
+{"text": "retrocede 10 cm y luego gira a la derecha 45 grados", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": -0.1}, {"op": "turn", "degrees": -45}], "reply": "Retrocedo y giro a la derecha."}
+{"text": "avanza 20 cm luego gira 30 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": -30}], "reply": "Avanzo 20 cm y giro 30° a la derecha."}
+{"text": "necesito que gira a la izquierda ya", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "dame los topics ros", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "oiga regresa a la base ahora", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "avanza 30 cm , gira 45 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}], "reply": "Avanzo 30 cm y giro 45° a la derecha."}
+{"text": "muéstrame los topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "robot, gira a la derecha ahora", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "robot, ayuda ahora", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "ve a bomba 1", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "en primer lugar avanza 0.20 metros y luego gira 30 a la izquierda y finalmente avanza 0.10 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": 30}, {"op": "drive", "meters": 0.1}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "necesito que regresa a la base por favor", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "puedes gira a la derecha por favor", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "necesito que lista nodos", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "en primer lugar avanza 0.8 metros después gira 90 a la derecha por último avanza 0.5 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.5}], "reply": "Ejecuto el plan: avance, giro y avance final."}
+{"text": "gira a la derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "oiga avanza ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "avanza 10 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.1}], "reply": "Avanzo 10 cm."}
+{"text": "oiga para por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "necesito que regresa a la base ya", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "qué topics hay", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "quiero que lista nodos por favor", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "ve a sala de máquinas", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "por favor gira a la izquierda ahora", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "quiero que batería ya", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "puedes batería ya", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "puedes detén ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "quiero que retrocede por favor", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "puedes gira a la derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "gira derecha por favor", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "dame el listado de topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "robot, avanza ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "gira 90 grados a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -90}], "reply": "Giro 90° a la derecha."}
+{"text": "robot, adelante ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "por favor ayuda ya", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "en primer lugar avanza 0.80 metros a continuación gira 90 a la izquierda finalmente avanza 0.40 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.4}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "en primer lugar avanza 0.80 metros seguidamente gira 90 a la izquierda por último avanza 0.40 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": 90}, {"op": "drive", "meters": 0.4}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "conexión", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "puedes para ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "puedes regresa a la base ahora", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "volume up", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "gira a la derecha por favor", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "frena", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "retrocede", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "oiga ayuda ahora", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "oiga retrocede ya", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "sal del cargador", "intent": "navigate", "destination": "undock", "reply": "Desatracando del dock."}
+{"text": "quiero que gira a la derecha ahora", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "quiero que lista los topics ya", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "lista los topics ahora", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "necesito que detén ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "por favor estado del robot", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "necesito que para ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "gira a la izquierda en 90 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 90}], "reply": "Giro 90° a la izquierda."}
+{"text": "robot, batería ahora", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "puedes gira a la izquierda por favor", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "gira 45 a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 45}], "reply": "Giro 45° a la izquierda."}
+{"text": "puedes para ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "volte 90 a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 90}], "reply": "Giro 90° a la izquierda."}
+{"text": "ok", "intent": "unknown", "destination": null, "reply": "Eso queda fuera de lo que puedo hacer con el robot. Puedo avanzar, girar, detener o consultar estado."}
+{"text": "por favor retrocede ya", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "detén ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "oiga detén por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza 12 pulgadas", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3048}], "reply": "Avanzo 12 pulgadas (~0.3048 m)."}
+{"text": "en primer lugar avanza 0.30 metros después gira 45 a la izquierda por último avanza 0.15 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": 45}, {"op": "drive", "meters": 0.15}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "necesito que adelante", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "forward 6 in", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.1524}], "reply": "Avanzo 6 pulgadas (~0.1524 m)."}
+{"text": "dame el status", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "gira izquierda 90", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 90}], "reply": "Giro 90° a la izquierda."}
+{"text": "estado del robot ahora", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "avanza 30 cm luego gira 45 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": -45}], "reply": "Avanzo 30 cm y giro 45° a la derecha."}
+{"text": "puedes ayuda por favor", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "adelante 3 feet", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.9144}], "reply": "Avanzo 3 pie(s) (~0.9144 m)."}
+{"text": "dock", "intent": "return_home", "destination": null, "reply": "Regresando a la base / dock."}
+{"text": "avanza 30 cm , gira 45 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3}, {"op": "turn", "degrees": 45}], "reply": "Avanzo 30 cm y giro 45° a la izquierda."}
+{"text": "adelante 24 inches", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.6096}], "reply": "Avanzo 24 pulgadas (~0.6096 m)."}
+{"text": "robot, gira a la izquierda ya", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "gira 30° a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -30}], "reply": "Giro 30° a la derecha."}
+{"text": "avanza 80 cm luego gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 80 cm y giro 90° a la izquierda."}
+{"text": "por favor para ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "navega hasta oficina", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "puedes lista los topics ya", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "robot, para ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza medio metro", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}], "reply": "Avanzo 0.5 m."}
+{"text": "puedes retrocede por favor", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "necesito que detén ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "ayuda", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "turn 90 left", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 90}], "reply": "Giro 90° a la izquierda."}
+{"text": "avanza 6 pulgadas", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.1524}], "reply": "Avanzo 6 pulgadas (~0.1524 m)."}
+{"text": "avanza 50 cm , gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 50 cm y giro 90° a la derecha."}
+{"text": "avanza 20 cm , gira 30 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": -30}], "reply": "Avanzo 20 cm y giro 30° a la derecha."}
+{"text": "pasa por el pasillo norte", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "primero avanza 20 cm a continuación gira 30 a la derecha finalmente avanza 10 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": -30}, {"op": "drive", "meters": 0.1}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "quiero que para ahora", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "por favor estado del robot por favor", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}
+{"text": "puedes gira a la izquierda ahora", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "puedes batería", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "para atrás", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "puedes lista los topics por favor", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "avanza ahora", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "gira a la derecha en 180 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -180}], "reply": "Giro 180° a la derecha."}
+{"text": "avanza 3 pies", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.9144}], "reply": "Avanzo 3 pie(s) (~0.9144 m)."}
+{"text": "parar", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "battery", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "adelante 25 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.25}], "reply": "Avanzo 25 cm."}
+{"text": "necesito que ayuda", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "en primer lugar avanza 0.20 metros después gira 30 a la izquierda por último avanza 0.10 metros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": 30}, {"op": "drive", "meters": 0.1}], "reply": "Ejecuto avance, giro y avance final."}
+{"text": "quiero que retrocede", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "quiero que ayuda", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "turn 180 right", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -180}], "reply": "Giro 180° a la derecha."}
+{"text": "robot, ayuda por favor", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "robot, avanza", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "avanza 80 cm luego gira 90 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": -90}], "reply": "Avanzo 80 cm y giro 90° a la derecha."}
+{"text": "gira izquierda por favor", "intent": "navigate", "destination": "izquierda", "reply": "Girando a la izquierda."}
+{"text": "robot, lista nodos ahora", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "por favor gira a la derecha ya", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "detente", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "gira 90 a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 90}], "reply": "Giro 90° a la izquierda."}
+{"text": "necesito que avanza ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "avanza 50 cm y luego gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.5}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 50 cm y giro 90° a la izquierda."}
+{"text": "avanza 20 cm y luego gira 30 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.2}, {"op": "turn", "degrees": -30}], "reply": "Avanzo 20 cm y giro 30° a la derecha."}
+{"text": "por favor atrás", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "primero avanza 80 cm a continuación gira 90 a la derecha finalmente avanza 40 cm", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.8}, {"op": "turn", "degrees": -90}, {"op": "drive", "meters": 0.4}], "reply": "Ejecuto el plan de tres pasos."}
+{"text": "por favor retrocede", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "puedes detén ya", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "avanza 40 cm después gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 40 cm y giro 90° a la izquierda."}
+{"text": "avanza 18 pulgadas", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4572}], "reply": "Avanzo 18 pulgadas (~0.4572 m)."}
+{"text": "ve al almacen", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "puedes lista nodos ahora", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "avanza 40 cm , gira 90 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}, {"op": "turn", "degrees": 90}], "reply": "Avanzo 40 cm y giro 90° a la izquierda."}
+{"text": "puedes avanza ya", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "ve a la fuga de válvula 3", "intent": "unknown", "destination": null, "reply": "En esta versión no hay rutas a zonas nombradas del mapa. Usa avances, giros y planes paso a paso con distancias y ángulos."}
+{"text": "enséñame los topics", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "gira 60 grados a la izquierda", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 60}], "reply": "Giro 60° a la izquierda."}
+{"text": "necesito que batería ahora", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "por favor detén por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "forward 24 in", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.6096}], "reply": "Avanzo 24 pulgadas (~0.6096 m)."}
+{"text": "lista nodos ya", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "puedes gira a la derecha ya", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "quiero que lista los topics por favor", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "avanza 40 centímetros", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.4}], "reply": "Avanzo 40 cm."}
+{"text": "robot, lista los topics ya", "intent": "list_topics", "destination": null, "reply": "Listo, consulto los topics ROS2."}
+{"text": "nodos ros2", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "necesito que batería por favor", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "oiga batería por favor", "intent": "get_battery", "destination": null, "reply": "Consulto el nivel de batería."}
+{"text": "atrás 12 pulgadas", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": -0.3048}], "reply": "Retrocedo 12 pulgadas."}
+{"text": "avanza 24 pulgadas", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.6096}], "reply": "Avanzo 24 pulgadas (~0.6096 m)."}
+{"text": "robot, retrocede", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "show nodes", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "cuáles son los nodos", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "ayuda ya", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "necesito que ayuda ahora", "intent": "help", "destination": null, "reply": "Habla en lenguaje natural: avanza X metros/cm/pulgadas/pies, gira N (grados) izquierda/derecha, planes con primero/después/finalmente. Sin rutas a almacén u otras zonas aún."}
+{"text": "por favor sigue adelante", "intent": "navigate", "destination": "adelante", "reply": "Avanzando."}
+{"text": "robot, detén por favor", "intent": "cancel_navigation", "destination": null, "reply": "Deteniendo el robot ahora."}
+{"text": "puedes lista nodos", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "por favor para atrás", "intent": "navigate", "destination": "atras", "reply": "Retrocediendo."}
+{"text": "undock now", "intent": "navigate", "destination": "undock", "reply": "Desatracando del dock."}
+{"text": "forward 1 ft", "intent": "sequence", "destination": null, "steps": [{"op": "drive", "meters": 0.3048}], "reply": "Avanzo 1 pie(s) (~0.3048 m)."}
+{"text": "gira a la izquierda 45 grados", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": 45}], "reply": "Giro 45° a la izquierda."}
+{"text": "rota 30 a la derecha", "intent": "sequence", "destination": null, "steps": [{"op": "turn", "degrees": -30}], "reply": "Giro 30° a la derecha."}
+{"text": "qué nodos hay", "intent": "list_nodes", "destination": null, "reply": "Voy a listar los nodos activos."}
+{"text": "por favor gira derecha", "intent": "navigate", "destination": "derecha", "reply": "Girando a la derecha."}
+{"text": "quiero que estado del robot ahora", "intent": "get_status", "destination": null, "reply": "Te muestro el estado actual del robot."}

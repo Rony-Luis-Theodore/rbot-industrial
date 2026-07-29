@@ -1,0 +1,57 @@
+# R-Bot Industrial — ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+!.env.example
+
+# Node / frontend caches
+node_modules/
+
+# ROS / colcon (si alguien enlaza packages/ros_ws)
+packages/ros_ws/
+**/build/
+**/install/
+**/log/
+.ros_home/
+
+# ML — binarios fuera; datasets jsonl SÍ van al repo
+ml/export/*.gguf
+ml/export/*.onnx
+ml/export/rbot-intent-lora/
+ml/export/rbot-intent-merged/
+ml/export/rbot-operator-*/
+!ml/export/.gitkeep
+!ml/export/Modelfile.*
+!ml/export/README.md
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+.cursor/
+*.swp
+__MACOSX/
+
+# Logs / runtime
+*.log
+/tmp/
+*.pid
+
+# Archives / zips
+*.zip
+archive/
+third_party/
+
+# Referencia de diseño (no necesaria en runtime)
+apps/web/assets/brand/ui-ref-dashboard.png
+
+# Ollama local models
+.ollama/
+
+# Local sibling (Documents/Proyectos/_local)
+../_local/
