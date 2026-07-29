@@ -55,3 +55,6 @@ apps/web/assets/brand/ui-ref-dashboard.png
 
 # Local sibling (Documents/Proyectos/_local)
 ../_local/
+
+# Symlink local (archivo; la barra / no lo ignoraba)
+packages/ros_ws
