@@ -160,6 +160,33 @@ Lab real: sección **Linux + ROS 2** arriba + [`docs/lab-ros.md`](docs/lab-ros.m
 
 ---
 
+## Chat con Ollama (Operator v3)
+
+Por defecto el repo arranca en **`mock`**: el *motion guard* cubre avance/giro/secuencias
+sin instalar nada. Para el modelo fine-tune **Operator v3**:
+
+1. Instala [Ollama](https://ollama.com) y déjalo corriendo.
+2. Descarga el GGUF desde la Release (~1.8 GB):  
+   https://github.com/Rony-Luis-Theodore/rbot-industrial/releases/tag/v1.0.0
+3. Crea el modelo e activa el proveedor:
+
+```bash
+cd rbot-industrial/ml/export
+# coloca aquí rbot-operator-q4_k_m.gguf (o: gh release download …)
+ollama create rbot-operator -f Modelfile.rbot-operator
+```
+
+```env
+# apps/api/.env
+LLM_PROVIDER=ollama
+OLLAMA_MODEL=rbot-operator
+OLLAMA_BASE_URL=http://127.0.0.1:11434
+```
+
+Detalle: [`ml/export/README.md`](ml/export/README.md).
+
+---
+
 ## Repo (runtime v1.0)
 
 | Pieza | Ruta |
@@ -172,8 +199,10 @@ Lab real: sección **Linux + ROS 2** arriba + [`docs/lab-ros.md`](docs/lab-ros.m
 | Dataset + Colab | `ml/` |
 | Checkpoint | `packages/lab_map/snapshots/LabHmiStableV4/` |
 
-Fuera de git: GGUF, workspace ROS, `.env` real, tokens del lab.  
+Fuera de git: GGUF (ver **Releases**), workspace ROS, `.env` real, tokens del lab.  
 Carpeta técnica del monorepo: `rbot-industrial` · producto: **Sonar**.
+
+**Release v1.0.0 (GGUF):** https://github.com/Rony-Luis-Theodore/rbot-industrial/releases/tag/v1.0.0
 
 ---
 

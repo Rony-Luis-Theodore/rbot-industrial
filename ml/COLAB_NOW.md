@@ -33,14 +33,25 @@ Smoke tests en notebook / chat tras desplegar:
 - `avanza 2 pies` → `drive` ~0.61 m
 - `ve a almacén` → `unknown` (zonas no disponibles)
 
-## 3) Volver al PC
+## 3) Volver al PC (o usar la Release)
+
+**Opción A — Release v1.0.0 (recomendado para usuarios):**
 
 ```bash
-# Copia el .gguf a ml/export/ o _local/ml-models/
+gh release download v1.0.0 \
+  -R Rony-Luis-Theodore/rbot-industrial \
+  -p 'rbot-operator-q4_k_m.gguf' \
+  -D ml/export
 
-cd ~/Documents/Proyectos/rbot-industrial/ml/export
+cd ml/export
 ollama create rbot-operator -f Modelfile.rbot-operator
+```
 
+https://github.com/Rony-Luis-Theodore/rbot-industrial/releases/tag/v1.0.0
+
+**Opción B — GGUF que exportaste tú en Colab:** cópialo a `ml/export/` y el mismo `ollama create`.
+
+```bash
 # apps/api/.env:
 #   LLM_PROVIDER=ollama
 #   OLLAMA_MODEL=rbot-operator

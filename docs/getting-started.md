@@ -42,25 +42,24 @@ Mapa demo: `packages/lab_map/maps/laboratorio_kalman`.
 
 El robot del laboratorio **requiere ROS 2 en Linux**. Guía: [lab-ros.md](lab-ros.md).
 
-## Ollama (sin robot)
+## Ollama (Operator v3 desde Release)
+
+1. Instala Ollama (`http://127.0.0.1:11434`).
+2. Descarga el GGUF: https://github.com/Rony-Luis-Theodore/rbot-industrial/releases/tag/v1.0.0  
+   → `ml/export/rbot-operator-q4_k_m.gguf`
+3. `cd ml/export && ollama create rbot-operator -f Modelfile.rbot-operator`
+4. En `apps/api/.env`:
 
 ```env
 LLM_PROVIDER=ollama
-OLLAMA_MODEL=qwen2.5:1.5b
+OLLAMA_MODEL=rbot-operator
 ROS_PROVIDER=mock
 ```
 
-`ollama pull qwen2.5:1.5b` y reinicia la API.
+5. Reinicia la API.
 
-### Modelo `rbot-operator` (opcional, ~1.8 GB fuera de git)
-
-```bash
-ollama create rbot-operator -f ml/export/Modelfile.rbot-operator
-```
-
-```env
-OLLAMA_MODEL=rbot-operator
-```
+Sin GGUF: `ollama pull qwen2.5:1.5b` y `OLLAMA_MODEL=qwen2.5:1.5b`.  
+Detalle: [ml/export/README.md](../ml/export/README.md).
 
 ## Ubicar
 

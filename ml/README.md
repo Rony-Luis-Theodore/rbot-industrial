@@ -10,7 +10,26 @@
 | `export/Modelfile.rbot-operator` | SYSTEM prompt Operator v3 |
 | `scripts/build_operator_dataset.py` | Regenerar dataset v3 |
 
-## Arranque rápido (Colab → PC)
+## Arranque rápido (Release → Ollama → PC)
+
+```bash
+# 1) Descargar GGUF de la Release v1.0.0
+gh release download v1.0.0 \
+  -R Rony-Luis-Theodore/rbot-industrial \
+  -p 'rbot-operator-q4_k_m.gguf' \
+  -D ml/export
+
+# 2) Crear modelo
+cd ml/export && ollama create rbot-operator -f Modelfile.rbot-operator
+
+# 3) apps/api/.env
+# LLM_PROVIDER=ollama
+# OLLAMA_MODEL=rbot-operator
+```
+
+Release: https://github.com/Rony-Luis-Theodore/rbot-industrial/releases/tag/v1.0.0
+
+## Re-entrenar (Colab)
 
 ```bash
 # 1) Regenerar dataset
@@ -20,15 +39,7 @@ python3 ml/scripts/build_operator_dataset.py
 #    sube operator_v3_sft.jsonl → entrena → merge a Drive
 
 # 3) Export GGUF: 02_export_gguf_colab.ipynb
-#    (Drive: rbot-operator-merged)
-
-# 4) En el PC
-cd ml/export
-ollama create rbot-operator -f Modelfile.rbot-operator
-
-# 5) apps/api/.env
-# LLM_PROVIDER=ollama
-# OLLAMA_MODEL=rbot-operator
 ```
 
-**Arranque Colab ahora:** [`COLAB_NOW.md`](COLAB_NOW.md)
+**Arranque Colab ahora:** [`COLAB_NOW.md`](COLAB_NOW.md)  
+**Instalar desde Release:** [`export/README.md`](export/README.md)
